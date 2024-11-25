@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1,h2{
+    color: rgb(154, 148, 35);
+    background-color: rgb(41, 47, 7);
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    font: 2em italic;
+}
+h2{
+    font-style: oblique;
+}
+p{
+    background-color: white;
+    color: rgb(82, 82, 4);
+    font-size: 1.2em;
+    text-indent: 5px;
+}
+body{
+    background-color: azure;
+}
