@@ -3,7 +3,7 @@
 h1,h2{
     color: rgb(154, 148, 35);
     background-color: rgb(41, 47, 7);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 h1{
@@ -19,6 +19,14 @@ p{
     font-size: 1.2em;
     text-indent: 5px;
 }
+p.destaque{
+    color: black;
+    text-decoration: none;
+}
+p.destaque>a{
+    text-decoration: none;
+}
 body{
     background-color: rgb(255, 240, 240);
 }
+
