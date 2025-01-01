@@ -1,0 +1,116 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ccc;
+
+}
+#Cabeçalho{
+    background-image: url(../imagem/bg-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    
+   
+
+}
+ol{
+    text-align: center;
+    
+}
+li{
+    display: inline-block;
+    list-style-type:none ;
+    background-color: rgba(0, 0, 0, 0.227);
+    margin: 10px;
+    padding: 10px ;
+    width: 50px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.685);
+    border-radius: 5px;
+
+}
+a{
+    text-decoration: none;
+}
+a.menu{
+    color: white;
+}
+#tprin{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2.2em;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 3px 0px rgba(0, 0, 0, 0.318);
+    margin-bottom: 20px;
+}
+div{
+    width: 280px;
+    background-color: #00000054;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.685);
+    font-size: 0.9em;
+}
+section{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.c2{
+    background-color: #cccccc7e;
+    border-bottom: 2px solid #6a6a6a;
+}
+.tsec{
+    font-family: sans-serif;
+    padding: 5px;
+   
+}
+.text{
+    font-size: 0.9em;
+    padding: 8px;
+}
+.botao{
+    padding: 8px;
+    background-color: #dcdcdc;
+    border:none;
+    border-bottom: 2px solid black ;
+    border-radius: 5px;
+}
+.link{
+    color: #000000;
+}
+@media screen  and (min-width:768px) and (max-width:1024px){
+    #Cabeçalho{
+        background-position: top right ;
+    }
+    #tprin{
+        font-size: 2.6em;
+    }
+    div{
+        width: 480px;
+        text-align: center;
+    }
+    section{
+        width: 600px; 
+        margin: 10px auto ;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    section{
+        width: 700px;
+        font-size: 1em;
+        margin: 10px auto;
+    }
+    #Cabeçalho{
+        background-position: right;
+    }
+    li{
+        width: 100px;
+    }
+}
