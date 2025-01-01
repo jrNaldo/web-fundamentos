@@ -129,8 +129,6 @@ section{
         width: 150px;
     }
 }
-    
-}
 @media screen  and (min-width:2560px){
     section{
         width: 1000px;
