@@ -101,7 +101,7 @@ section{
         margin: 10px auto ;
     }
 }
-@media screen and (min-width:1024px) and(max-width:2560px) {
+@media screen and (min-width:1024px) and(max-width:1440px) {
     #Cabeçalho{
         background-position: right;
     }
@@ -114,6 +114,22 @@ section{
     li{
         width: 150px;
     }
+}
+@media screen  and ( min-width:1440px) and (max-width:2560px){
+    #Cabeçalho{
+        background-position: right;
+    }
+    section{
+        width: 700px;
+        font-size: 1em;
+        margin: 10px auto;
+
+    }
+    li{
+        width: 150px;
+    }
+}
+    
 }
 @media screen  and (min-width:2560px){
     section{
