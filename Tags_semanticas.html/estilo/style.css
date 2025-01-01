@@ -16,7 +16,7 @@ body{
 
 }
 ol{
-    text-align: end;
+    text-align: center;
     
 }
 li{
@@ -40,19 +40,20 @@ a.menu{
 #tprin{
     margin-top: 80px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: white;
     font-family: sans-serif;
     text-shadow: 3px 0px rgba(0, 0, 0, 0.318);
     margin-bottom: 20px;
 }
 div{
-    width: 350px;
+    width: 280px;
     background-color: #00000054;
     color: white;
     margin: auto;
     padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.685);
+    font-size: 0.9em;
 }
 section{
     background-color: white;
@@ -82,4 +83,32 @@ section{
 }
 .link{
     color: #000000;
+}
+@media screen  and (min-width:768px) and (max-width:1024px){
+    #Cabeçalho{
+        background-position: top right ;
+    }
+    #tprin{
+        font-size: 2.6em;
+    }
+    div{
+        width: 480px;
+        text-align: center;
+    }
+    section{
+        width: 600px; 
+        margin: 10px auto ;
+    }
+}
+@media screen and (min-width:1024px){
+    section{
+        width: 700px;
+        font-size: 1em;
+    }
+    #Cabeçalho{
+        background-position: right;
+    }
+    li{
+        width: 100px;
+    }
 }
