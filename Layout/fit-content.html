@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit content</title>
+    <style>
+        .fit-content .item{
+            width: fit-content;
+        }
+        .min-content .item{
+            width: min-content;
+        }
+        .max-content .item{
+            width: max-content;
+        }
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 5px
+        }
+        .item{
+            background-color: rgb(177, 177, 255);
+            margin-bottom:10px ;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo.</div>
+        <div class="item" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum quia corporis, nostrum reiciendis, aspernatur veniam deserunt in totam autem saepe sint quo, accusamus debitis!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis optio, officiis at earum illo corporis sapiente nostrum nulla accusantium impedit libero illum reprehenderit architecto dolore itaque cum expedita, facilis velit temporibus modi perferendis! Tempora tenetur quas asperiores minus. Vitae commodi blanditiis dolores rem incidunt nam numquam distinctio assumenda, placeat modi pariatur sint soluta ratione adipisci fuga reiciendis dolorem sed molestiae quisquam omnis delectus similique maxime! Ut laborum neque debitis aperiam. Quia sed modi incidunt accusamus.</div>
+    </div>
+    <div class="container fit-content">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo.</div>
+        <div class="item" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum quia corporis, nostrum reiciendis, aspernatur veniam deserunt in totam autem saepe sint quo, accusamus debitis!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis optio, officiis at earum illo corporis sapiente nostrum nulla accusantium impedit libero illum reprehenderit architecto dolore itaque cum expedita, facilis velit temporibus modi perferendis! Tempora tenetur quas asperiores minus. Vitae commodi blanditiis dolores rem incidunt nam numquam distinctio assumenda, placeat modi pariatur sint soluta ratione adipisci fuga reiciendis dolorem sed molestiae quisquam omnis delectus similique maxime! Ut laborum neque debitis aperiam. Quia sed modi incidunt accusamus.</div>
+    </div>
+    <div class="container min-content">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo.</div>
+        <div class="item" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum quia corporis, nostrum reiciendis, aspernatur veniam deserunt in totam autem saepe sint quo, accusamus debitis!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis optio, officiis at earum illo corporis sapiente nostrum nulla accusantium impedit libero illum reprehenderit architecto dolore itaque cum expedita, facilis velit temporibus modi perferendis! Tempora tenetur quas asperiores minus. Vitae commodi blanditiis dolores rem incidunt nam numquam distinctio assumenda, placeat modi pariatur sint soluta ratione adipisci fuga reiciendis dolorem sed molestiae quisquam omnis delectus similique maxime! Ut laborum neque debitis aperiam. Quia sed modi incidunt accusamus.</div>
+        <div class="container max-content">
+            <div class="item">Lorem</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo.</div>
+            <div class="item" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum quia corporis, nostrum reiciendis, aspernatur veniam deserunt in totam autem saepe sint quo, accusamus debitis!</div>
+            <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis optio, officiis at earum illo corporis sapiente nostrum nulla accusantium impedit libero illum reprehenderit architecto dolore itaque cum expedita, facilis velit temporibus modi perferendis! Tempora tenetur quas asperiores minus. Vitae commodi blanditiis dolores rem incidunt nam numquam distinctio assumenda, placeat modi pariatur sint soluta ratione adipisci fuga reiciendis dolorem sed molestiae quisquam omnis delectus similique maxime! Ut laborum neque debitis aperiam. Quia sed modi incidunt accusamus.</div>
+        </div>
+    </div>
+</body>
+</html>
