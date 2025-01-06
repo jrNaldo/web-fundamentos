@@ -97,16 +97,16 @@ section{
         text-align: center;
     }
     section{
-        width: 600px; 
+        width: 80%; 
         margin: 10px auto ;
     }
 }
-@media screen and (min-width:1024px) and(max-width:1440px) {
+@media screen and (min-width:1024px) and (max-width:1440px) {
     #Cabeçalho{
         background-position: right;
     }
     section{
-        width: 700px;
+        width: 80%;
         font-size: 1em;
         margin: 10px auto;
 
@@ -120,7 +120,7 @@ section{
         background-position: right;
     }
     section{
-        width: 700px;
+        width: 80%;
         font-size: 1em;
         margin: 10px auto;
 
@@ -131,9 +131,9 @@ section{
 }
 @media screen  and (min-width:2560px){
     section{
-        width: 1000px;
+        width:60%;
         margin: 10px auto;
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     #tprin{
         font-size: 4em;
