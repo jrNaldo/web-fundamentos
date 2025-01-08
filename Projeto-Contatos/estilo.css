@@ -34,6 +34,9 @@ body {
     border-bottom: 2px solid #eee;
     padding: 16px;
 }
+.list-item:hover{
+    background-color: #e8e8e8;
+}
 .list-item-imagem img{
     border-radius: 50%;
     width: 80px;
@@ -53,8 +56,11 @@ body {
     color: #aaa;
 }
 .list-item-action{
-    
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
 }
-.list-item-action:hover{
-    
+.list-item:hover .list-item-action{
+    opacity: .5;
 }
