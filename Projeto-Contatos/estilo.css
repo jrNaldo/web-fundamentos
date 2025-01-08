@@ -4,8 +4,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
-
+.container{
+    background-color: white;
+    padding: 5px;
+    border-radius:5px ;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 .main-title {
     color: #385555;
 }
