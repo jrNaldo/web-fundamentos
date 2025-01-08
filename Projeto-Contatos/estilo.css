@@ -10,6 +10,11 @@ body {
     flex-direction: column;
     height: 100vh;
 }
+.list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
 .container{
     background-color: white;
     padding: 5px;
@@ -22,4 +27,34 @@ body {
 }
 .main-title {
     color: #385555;
+}
+
+.list-item{
+    display: flex;
+    border-bottom: 2px solid #eee;
+    padding: 16px;
+}
+.list-item-imagem img{
+    border-radius: 50%;
+    width: 80px;
+}
+.list-item-content{
+    padding: 0 20px;
+    flex-grow: 1;
+    
+}
+.list-item-name{
+    font-size: 23px;
+    color: #385555;
+    margin: 0;
+}
+.list-item-email{
+    margin-top: 5px;
+    color: #aaa;
+}
+.list-item-action{
+    
+}
+.list-item-action:hover{
+    
 }
