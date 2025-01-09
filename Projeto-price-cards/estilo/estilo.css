@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html{
+    margin-bottom: 5px;
+}
 body{
     background-color: #0c1014;
     color: white;
@@ -12,6 +15,7 @@ body{
     font-size: 62px;
     text-align: center;
     margin: 46px 0;
+    letter-spacing: 2px;
 }
 .main-header{
     display: flex;
@@ -37,8 +41,63 @@ body{
     padding: 16px;
     border-radius:6px ;
 }
+.main-nav-ul a:hover{
+    text-decoration:underline ;
+}
  a.main-a-active {
     background-color: #cbe300;
     color: #0c1014;
+    pointer-events: none;
     
+}
+.container{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.container-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #1f262c;
+    padding: 15px;
+    border-radius:6px ;
+    box-shadow: 0 5px 12px  -6px black;
+}
+.pricing-plan-title{
+    text-transform: uppercase;
+    border-bottom:2px solid #cbe300;
+    padding: 2px;
+    letter-spacing: 2px;
+}
+.pricing-plan-title p{
+    margin-top: 0;
+}
+.pricing-plan-price{
+    font-size: 34px;
+}
+.princing-plan-features{
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+.princing-plan-features li::marker{
+    color: #cbe300;
+}
+.princing-plan-cta{
+    text-decoration: none;
+    color: #1f262c;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-align: center;
+}
+.princing-plan-cta:hover{
+    outline: 1px solid #cbe300;
+    background-color: transparent;
+    color: white;
 }
