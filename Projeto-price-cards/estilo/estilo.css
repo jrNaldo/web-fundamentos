@@ -1,4 +1,44 @@
 @charset "UTF-8";
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-title{
+    text-transform: uppercase;
+    font-size: 62px;
+    text-align: center;
+    margin: 46px 0;
+}
+.main-header{
+    display: flex;
+    background-color: #05080a;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+.main-header-logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+.main-nav-ul{
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    font-size: 18px;
+}
+.main-nav-ul a{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius:6px ;
+}
+ a.main-a-active {
+    background-color: #cbe300;
+    color: #0c1014;
+    
 }
