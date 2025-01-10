@@ -37,20 +37,24 @@ body {
 .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
     background-color: white;
     width: 860px;
-    margin: auto;
+    margin:auto;
 
 
 }
 .flex-item{
     flex-basis: 250px ;
     flex-grow: 1;
+    margin: 8px;
+
 }
 .flex-item img{
+    display: block;
     width: 100%;
 }
 .flex-item p{
     background-color: #393535;
+    margin: 0;
+    padding: 8px;
 }
