@@ -38,10 +38,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    width: 860px;
+    width: 70%;
+    max-width: 1440px;
     margin:auto;
-
-
 }
 .flex-item{
     flex-basis: 250px ;
