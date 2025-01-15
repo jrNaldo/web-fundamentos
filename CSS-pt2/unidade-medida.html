@@ -24,13 +24,13 @@
         p{
             font-size: 3em;
         }
-        .medida{
+        .porcentagem{
             width: 60%;
             height: 600px;
             background-color: rgb(246, 149, 38);
             color: rgb(0, 0, 0);
         }
-        .medida p{
+        .porcentagem p{
             padding-top: 50%;
             width: 50%;
             font-size: 1.5rem;
@@ -45,17 +45,29 @@
             font-size: 2rem;
             margin: 0;
         }
+        .viewport-container{
+            font-size: 3rem;
+        }
+        .viewport{
+            width: 90vw;
+            height: 90vh;
+            background-color: rgba(255, 9, 9, 0.126);
+        }
     </style>
 </head>
 <body>
     <h1>Unidade de medida</h1>
     <p id="em">Lorem ipsum dolor sit <b> texto em negrito</b> adipisicing elit. Officia est blanditiis dolorem placeat eligendi itaque fuga sapiente accusamus officiis? In neque ducimus cupiditate perferendis eius.</p>
-    <div class="medida">
-        <p>Unidade de medida %</p>
+    <div class="porcentagem">
+        <p> %</p>
     </div>
 
     <div class="padding-em">
         <p>Padding com em</p>
+    </div>
+    <div class="porcentagem viewport-container">
+        Porcentagem
+        <div class="viewport">Viewport</div>
     </div>
 </body>
 </html>
