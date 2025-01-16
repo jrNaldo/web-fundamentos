@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font Face</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         @font-face {
             font-family: nadia;
             src:
@@ -19,11 +20,16 @@
             src: url(fonte/OpenSans-Regular.ttf) format("truetype"),
             local(Open-Sans);
         }
+       
         h1{
            font-family:'nadia'; 
         }
         h2{
             font-family: 'OpenSans';
+        }
+        .font2{
+            font-family: 'Montserrat';
+            font-weight: normal;
         }
     </style>
 </head>
@@ -32,6 +38,6 @@
     <h2>
         Fonte Open Sans
     </h2>
-
+    <h2 class="font2">Fonte Montserrat</h2>
 </body>
 </html>
