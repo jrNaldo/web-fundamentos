@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face</title>
+    <style>
+        @font-face {
+            font-family: nadia;
+            src:
+            local("Nadia Serif"),
+            local("Nadia-Serif")
+            url(fonte/nadia/nadia-serif.ttf) format("truetype"),
+            url(fonte/nadia/nadia-serif.woff) format("woff"),
+            url(fonte/nadia/nadia-serif.svg) format("svg");
+        }
+        @font-face {
+            font-family: OpenSans;
+            src: url(fonte/OpenSans-Regular.ttf) format("truetype"),
+            local(Open-Sans);
+        }
+        h1{
+           font-family:'nadia'; 
+        }
+        h2{
+            font-family: 'OpenSans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-face</h1>
+    <h2>
+        Fonte Open Sans
+    </h2>
+
+</body>
+</html>
