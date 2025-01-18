@@ -7,26 +7,38 @@
     --footer-color:#0b171f;
     --text-color-footer:#6f8597;
 }
-html{
-    font-size: 62.5%;
+*{
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Roboto', Tahoma, sans-serif;
+    width: 50rem;
 }
-#principal{
-    width: 49rem;
-    margin: ;
-}
+
 .banner{
     background-image: url(../imagem/topo.jpg);
     background-size: cover;
     height: 30rem;
-    padding: 2rem;
-    margin-top: -1rem;
-    margin-left: -1rem;
+    display: flex;
+}
+.menu{
+    background-color: var(--back-color);
+    height: 4rem;
+    width: 50rem;
 }
 .main-title{
-
+    font-size: 2.3rem;
+    font-family: 'Viaoda Libre';
+    font-weight: normal;
+    color: white;
+    display: flex;
+    margin-left: 1rem;
+}
+.main-menu{
+    list-style-type: none;
+    display: flex;
 }
