@@ -33,6 +33,7 @@ body{
     height: 4rem;
     width: 32rem;
     display:flex;
+    box-sizing: border-box;
 }
 .main-title{
     font-size: 2rem;
@@ -56,6 +57,7 @@ li:hover{
     text-decoration: underline;
     color: white;
     transition-duration: .5s;
+    cursor: pointer;
 }
 /* Corpo Principal */
 .content{
@@ -138,9 +140,16 @@ li:hover{
     .banner{
         width: 37.5rem;
     }
+    .main-title{
+        margin: 0 0 0 1rem;
+    }
     .menu{
         width: 37.5rem;
         padding: .8rem;
+    }
+    .main-menu{
+      padding: 1rem;
+      margin: 0;
     }
     .content{
         width: 37.5rem;
@@ -166,3 +175,4 @@ li:hover{
         width: 37.5rem;
     }
 }
+@
