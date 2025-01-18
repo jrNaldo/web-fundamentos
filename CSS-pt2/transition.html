@@ -9,14 +9,19 @@
             font-size: 62.5%;
         }
         div{
-            background-color: orangered;
+            background-color: rgb(255, 145, 0);
             width: 20rem;
             height: 15rem;
-            margin: 10rem auto;
+            margin: 10rem ;
+            transition-property: width, height, background-color;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(.59,-0.3,.49,.1.36);
+            transition-delay: 1s ;
         }
         div:hover{
             width: 40rem;
-            transition: .3s;
+           height: 30rem;
+           background-color: rgb(255, 0, 0);
         }
     </style>
 </head>
