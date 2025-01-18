@@ -1,0 +1,32 @@
+@charset "UTF-8";
+:root{
+    --back-color:#162028;
+    --color-text-menu:#425564;
+    --text-color:#555;
+    --cor-fundo-imagem:#003d52;
+    --footer-color:#0b171f;
+    --text-color-footer:#6f8597;
+}
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', Tahoma, sans-serif;
+}
+#principal{
+    width: 49rem;
+    margin: ;
+}
+.banner{
+    background-image: url(../imagem/topo.jpg);
+    background-size: cover;
+    height: 30rem;
+    padding: 2rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+.main-title{
+
+}
