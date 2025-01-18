@@ -16,29 +16,36 @@ html{
 }
 body{
     font-family: 'Roboto', Tahoma, sans-serif;
-    width: 50rem;
+    width: 32rem;
+    margin: 0 auto;
 }
 
 .banner{
     background-image: url(../imagem/topo.jpg);
     background-size: cover;
-    height: 30rem;
-    display: flex;
+    height: 32rem;
 }
 .menu{
     background-color: var(--back-color);
     height: 4rem;
-    width: 50rem;
+    width: 32rem;
+    display:flex;
 }
 .main-title{
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: 'Viaoda Libre';
     font-weight: normal;
     color: white;
-    display: flex;
-    margin-left: 1rem;
+   margin-top: 1rem;
+   margin-left: 1rem;
+   margin-right: .4rem;
 }
 .main-menu{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
+    color: var(--color-text-menu);
+    gap: .8rem;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin-top: 1.8rem;
 }
