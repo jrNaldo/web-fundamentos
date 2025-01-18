@@ -175,4 +175,54 @@ li:hover{
         width: 37.5rem;
     }
 }
-@
+@media screen and (min-width:425px) and (max-width:768px) {
+    html,body, .content{
+        width:42.5rem;
+    }
+    .banner{
+        width: 42.5rem;
+    }
+    .menu{
+        width: 42.5rem;
+    }
+    .main-title{
+        padding: .9rem;
+        margin: 0;
+    }
+    .main-menu li{
+        font-size: 1.1rem;
+    }
+    .content-1{
+        width: 35rem;
+       
+    }
+    .content-1 p{
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+    .content-1-title{
+        font-size: 2.5rem;
+        width:35rem;
+    }
+    .container-imagem{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imagem{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .content-2{
+        width: 42.5rem;
+    }
+    .content-2-title{
+        width: 38rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .content-2 p {
+        width: 35rem;
+        font-size: 1.1rem;
+    }
+}
