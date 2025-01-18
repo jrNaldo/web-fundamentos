@@ -52,9 +52,14 @@ body{
     flex-grow: 1;
     margin-top: 1.8rem;
 }
+li:hover{
+    text-decoration: underline;
+    color: white;
+    transition-duration: .5s;
+}
 /* Corpo Principal */
 .content{
-    width: 20rem;
+    width: 32rem;
     font-size: 1.3rem;
     line-height: 2rem;
     font-size: 1rem;
@@ -63,6 +68,8 @@ body{
 } 
 .content-1{
     margin-bottom: 4rem;
+    width: 27.5rem;
+    margin: auto;
 }
 .content-1-title{
     margin-top: 4rem;
@@ -70,15 +77,21 @@ body{
     font-size: 1.5rem;
     text-align: center;
     margin-bottom:2rem ;
+    font-weight: normal;
 }
 .content p{
     color: var(--text-color);
 }
-.content-1 img{
-    width: 18rem;
+.imagem{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.content-1 img{
+    width: 18rem;
+    margin-top: 1.5rem;
 }
 .name-foto, .description-foto{
     text-align: center;
@@ -90,10 +103,8 @@ body{
     font-size: 1.5rem;
 }
 .content-2{
-    position: relative;
-    right: 6rem;
     width: 32rem;
-    margin: 0;
+    margin-top: 3rem ;
     padding: 2rem;
     height: 38rem;
     box-sizing: border-box;
@@ -119,4 +130,39 @@ body{
     color: var(--text-color-footer);
     text-align: center;
     font-size: 1.2rem;
+}
+@media screen and (min-width:375px) and ( max-width:425px){
+    html,body{
+        width: 37.5rem;
+    }
+    .banner{
+        width: 37.5rem;
+    }
+    .menu{
+        width: 37.5rem;
+        padding: .8rem;
+    }
+    .content{
+        width: 37.5rem;
+    }
+    .content-1{
+        display: flex;
+        flex-direction: column;
+        width: 27.5rem;
+        margin: auto;
+    }
+    .content-1-title{
+       font-size: 2rem;
+    }
+    .content-1 p{
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom:3rem ;
+    }
+    .content-1 img{
+        width: 24rem;
+    }
+    .content-2{
+        width: 37.5rem;
+    }
 }
