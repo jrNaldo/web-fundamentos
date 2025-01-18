@@ -15,8 +15,11 @@
             margin: 10rem ;
             transition-property: width, height, background-color;
             transition-duration: 1s;
-            transition-timing-function: cubic-bezier(.59,-0.3,.49,.1.36);
-            transition-delay: 1s ;
+            transition-timing-function: cubic-bezier(.59,-0.3, .49,.1.36);
+            transition-delay: 1s  cubic-bezier(.59,-0.3,.49,.1.36) ;
+
+        /* Shorthand */
+        transition: all 1s cubic-bezier(.59, -0.3, .49, .1.36) 1s  ;
         }
         div:hover{
             width: 40rem;
