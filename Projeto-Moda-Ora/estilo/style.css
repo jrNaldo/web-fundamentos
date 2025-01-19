@@ -60,7 +60,7 @@ li:hover{
 }
 /* Corpo Principal */
 .content{
-    width: 32rem;
+    max-width: 100vw;
     font-size: 1.3rem;
     line-height: 2rem;
     font-size: 1rem;
@@ -68,7 +68,7 @@ li:hover{
 } 
 .content-1{
     margin-bottom: 4rem;
-    width: 27.5rem;
+    max-width: 100vw;
     margin: auto;
 }
 .content-1-title{
@@ -82,19 +82,22 @@ li:hover{
 .content p{
     color: var(--text-color);
 }
+.container-imagem{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .imagem{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.content-1 img{
     width: 18rem;
-    margin-top: 1.5rem;
 }
-.name-foto, .description-foto{
+.imagem p{
     text-align: center;
+    margin: .5rem;
 }
 .name-foto{
     font-family: 'Viaoda Libre';
@@ -136,7 +139,7 @@ li:hover{
         margin: 0 0 0 1rem;
     }
     .menu{
-        width: 37.5rem;
+        max-width: 100vw;
         padding: .8rem;
     }
     .main-menu{
@@ -147,34 +150,40 @@ li:hover{
         max-width: 100vw;
     }
     .content-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        max-width: 100vw;
+        margin: 0;
     }
     .content-1-title{
        font-size: 2rem;
     }
-    .content-1 p{
+    .description-content-1{
         font-size: 1.1rem;
         text-align: center;
         margin-bottom:3rem ;
+        width: 30rem;
+        margin: auto;
     }
-    .content-1 img{
-        width: 24rem;
+    .container-imagem{
+        display:flex ;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem{
+        width: 15rem;
+    }
+    .name-foto, .description-foto{
+        text-align: center;
     }
     .content-2{
         margin: 0;
+        max-width: 100vw; 
     }
 }
 @media screen and (min-width:425px) and (max-width:768px) {
-    body, .content{
-        width: 100vw;
-    }
-    .banner{
-        width: 100vw;
-    }
-    .menu{
-        width: 100vw;
+    body{
+        max-width: 100vw;
     }
     .main-title{
         padding: .9rem;
@@ -184,29 +193,34 @@ li:hover{
         font-size: 1.1rem;
     }
     .content-1{
-        width: 38rem;
+       max-width: 100vw;
        
     }
     .content-1 p{
         font-size: 1.25rem;
-        margin-bottom: 3rem;
+        text-align: center;
+        
     }
     .content-1-title{
-        font-size: 2.5rem;
-        width:35rem;
+        font-size: 2.3rem;
+        text-align: center;
     }
     .container-imagem{
         display: flex;
-        flex-wrap:wrap ;
-        width: 38rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
     }
     .imagem {
         display: flex;
-        flex-direction: column;
-        flex:1;
+        flex-grow: 1;
+    }
+
+    .description-foto{
+        text-align: center;
     }
     .content-2{
-        width: 42.5rem;
+        max-width: 100vw;
     }
     .content-2-title{
         width: 38rem;
@@ -216,6 +230,9 @@ li:hover{
     .content-2 p {
         width: 35rem;
         font-size: 1.1rem;
+    }
+    .rodape{
+        max-width: 100vw;
     }
 }
 @media screen and (min-width:768px ) and (max-width:1024px) {
