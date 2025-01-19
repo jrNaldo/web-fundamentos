@@ -277,5 +277,20 @@ li:hover{
     }
     .content-2{
         width: 76.8rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content-2-title{
+        width: 50rem;
+        font-size: 2.8em;
+    }
+    .content-2 p{
+        line-height: 2.5rem;
+        font-size: 1.3rem;
+        width: 50rem;
+    }
+    .rodape{
+        padding:2.5rem;
+        font-size: 2rem;
     }
 }
