@@ -237,15 +237,15 @@ li:hover{
 }
 @media screen and (min-width:768px ) and (max-width:1024px) {
     body, .content{
-        width: 100vw;
+        max-width: 100vw;
     }
     .banner{
-        width: 100vw;
+        max-width: 100vw;
         background-position: bottom;
         height: 40rem;
     }
     .menu{
-        width: 100vw;
+        max-width: 100vw;
         height: 5.5rem;
     }
     .main-title{
@@ -259,32 +259,42 @@ li:hover{
         font-size: 1.5rem;
     }
     .content-1{
-        width: 100vw;
+        max-width: 100vw;
     }
     .content-1-title{
-        width: 60rem;
+        text-align: center;
         font-size: 3rem;
     }
-    .content-1 p{
+    .description-content-1{
         font-size: 1.4rem;
-        width: 60rem;
+        width: 50rem;
+        margin:  2rem auto;
         line-height: 2.2rem;
     }
     .container-imagem{
-        width: 60rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        width: 90vw;
+        max-width: 96rem;
+        flex-direction: row;
     }
     .imagem{
-        width: 20rem;
+        display: flex;
+        flex-grow:1;
+        flex-direction: column;
     }
     .imagem > .name-foto{
         font-size: 1.5rem;
+        margin: .5rem;
     }
     .imagem > .description-foto{
         font-size: 1.5rem;
         line-height: 0;
+        margin: .5rem;
     }
     .content-2{
-        width: 100vw;
+        max-width: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -298,6 +308,7 @@ li:hover{
         width: 50rem;
     }
     .rodape{
+        max-width: 100vw;
         padding:2.5rem;
         font-size: 2rem;
     }
