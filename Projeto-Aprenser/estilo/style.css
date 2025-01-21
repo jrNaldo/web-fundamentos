@@ -35,7 +35,7 @@ html{
     list-style: none;
     justify-content: end;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .hero-list li{
     display: flex;
@@ -72,7 +72,7 @@ span{
 /*Conteudo */
 .content{
     max-width: 100vw;
-    background-color: #cbcbcb; 
+    background-color: #fafafa; 
 }
 .content-title{
     text-align: center;
@@ -122,7 +122,47 @@ span{
     background-color: gold;
     border: 0;
 }
-
+.content-banner{
+    background-color: rgb(42, 42, 144);
+    color: white;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+.banner-title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.description-banner{
+    line-height: 1.9rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+.title-map{
+    text-align: center;
+    margin: 2rem ;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+}
 iframe{
-    max-width: 100vw;
+    display: block;
+    max-width:90vw;
+    margin: auto;
+}
+.description-map{
+    text-align: end;
+    width: 90vw;
+    margin: 2rem;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+/*Rodape */
+.rodape{
+    padding: 1.2rem;
+    background-color:  rgb(54, 54, 54);
+}
+.rodape-description{
+    text-align: center;
+    font-size:1.3rem ;
+    font-family: sans-serif;
+    color: white;
 }
