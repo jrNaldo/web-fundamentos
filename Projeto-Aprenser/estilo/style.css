@@ -18,6 +18,9 @@ html{
     background-position: center top;
     max-width: 100vw;
 }
+.hero-banner{
+    display: none;
+}
 .hero-nav{
     display: flex;
     background-color: rgb(54, 54, 54);
@@ -41,6 +44,7 @@ html{
     display: flex;
     outline: 1px solid rgb(218, 206, 39);
     outline-offset: .5rem;
+    font-size: 1rem;
 }
 .hero-list a{
     color: rgb(224, 214, 69);
@@ -52,6 +56,7 @@ html{
     margin-top:2rem ;
     margin-left: 2rem;
     line-height:3.5rem;
+    white-space: pre-line;
 }
 span{
     text-transform: uppercase;
@@ -89,7 +94,7 @@ span{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .content-itens{
     display: flex;
@@ -99,9 +104,10 @@ span{
     width: 90%;
     margin: auto;
     max-width: 90rem;
-    flex: 1 calc(33.333% - 1.5rem);
-    max-width: calc(33.333% - 1.5rem);
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
     min-width: 25rem;
+    margin: 0 auto;
 }
 .card-title,.descripition-card{
     text-align: left;
@@ -116,7 +122,7 @@ span{
 }
 .more-cursos{
     margin: 1.2rem auto;
-    width: 80vw;
+    width: 28rem;
     padding: 1rem;
     border-radius: .5rem;
     background-color: gold;
@@ -168,4 +174,56 @@ iframe{
     font-size:1.3rem ;
     font-family: sans-serif;
     color: white;
+}
+@media screen and (min-width:425px) and (max-width:1024px) {
+    .content-itens{
+        min-width: 20rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .hero{
+        height: 41rem;
+    }
+    .banner{
+        display: flex;
+        width: 80vw;
+        margin: auto;
+    }
+    .main-title{
+        font-size: 2.6rem;
+        line-height: 4rem;
+        margin:  auto;
+    }
+    .hero-banner{
+        display: flex;
+        width: 39.5rem;
+        margin:  0 auto;
+    }
+    .click{
+       text-align: right;
+       vertical-align: middle;
+       margin: 0;
+       background-color: green;
+    }
+    .content-title{
+        font-size: 2.2rem;
+        margin: 0 1.5rem 1.5rem 1.5rem;
+    }
+    .more-cursos{
+        width: calc(33.333%);
+        margin: 2rem auto;
+    }
+    .container-banner{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+    .banner-title{
+       text-align: calc(50rem + 20rem);
+
+    }
+    .content-imagem{
+        display: flex;
+        width: 40rem;
+    }
 }
