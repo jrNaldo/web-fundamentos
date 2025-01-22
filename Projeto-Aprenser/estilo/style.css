@@ -264,3 +264,85 @@ iframe{
         margin: 1.5rem;
     }
 }
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .logo{
+        width: 10rem;
+        height: 5rem;
+    }
+    .hero-list a{
+        display: inline-block;
+        width: 6rem;
+        height: 1.5rem;
+        padding-top: 1rem;
+        font-size: 1.1rem;
+    }
+    .header-container{
+        width: 70vw;
+    }
+    .hero-banner{
+        width: 40vw;
+    }
+    .main-title{
+        font-size: 3.5rem;
+        line-height: 6rem;
+    }
+    .click{
+        width: 10vw;
+        height:1.5vw;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .content-title{
+        font-size: 3rem;
+        margin: 3rem;
+    }
+    .card-title{
+        font-size: 2rem;
+    }
+    .descripition-card{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .more-cursos{
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .container-banner{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+    .content-imagem{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 45vw;
+    }
+    .banner-title{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .description-banner{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 55vw;
+        line-height: 3.2rem;
+        font-size: 1.7rem;
+    }
+    .title-map{
+        font-size: 3.5rem;
+    }
+    iframe{
+        width: 90vw;
+        height: 40rem;
+    }
+    .description-map{
+        font-size: 1.8rem
+    }
+    .rodape{
+        height: 3vw;
+    }
+    .rodape-description{
+        font-size: 2rem;
+    }
+}
