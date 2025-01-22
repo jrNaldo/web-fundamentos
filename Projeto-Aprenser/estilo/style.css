@@ -23,6 +23,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .hero-banner{
     width: 16rem;
@@ -50,7 +51,7 @@ html{
 .hero-list a{
     color: rgb(224, 214, 69);
     text-decoration: none;
-    padding: 1rem;
+    padding: .5rem;
     outline: 1px solid gold;
     font-size: 1rem;
     border-radius: .5rem;
@@ -81,6 +82,8 @@ span{
     margin-bottom: 3rem;
     color: black;
     text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
 }
 
 /*Conteudo */
@@ -187,6 +190,14 @@ iframe{
     font-family: sans-serif;
     color: white;
 }
+@media screen and (min-width:425px) and (max-width:768px) {
+    .header-container{
+        width: 74vw;
+    }
+    .hero-banner{
+        width: 30vw;
+    }
+}
 @media screen and (min-width:600px) and (max-width:1024px) {
     .content-itens{
         min-width: 10rem;
@@ -207,17 +218,22 @@ iframe{
         outline-offset: .6rem;
         padding: .3rem ;
     }
-    .banner{
-        width: 80vw;
-        margin: auto;
+    .header-container{
+        width: 70vw;
+    }
+    .hero-banner{
+        width: 40vw;
     }
     .main-title{
         margin: auto;
+        font-size: 2.3rem;
+        line-height: 4rem;
     }
-    .hero-banner{
-        
+    .click{
+        width: 6rem;
+        margin: 1rem;
+        font-size: 1.2rem;
     }
-
     .content-title{
         font-size: 2.2rem;
     }
