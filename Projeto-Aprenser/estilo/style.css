@@ -11,7 +11,7 @@ html{
 }
 /* Cabeçalho */
 .back-color{
-    background: linear-gradient(to top,rgb(252, 252, 78), rgb(252, 252, 164),rgb(250, 250, 189), white);
+    background: linear-gradient(to top,rgb(239, 239, 105), rgb(252, 252, 164),rgb(250, 250, 189), white);
     max-width: 100vw;
 }
 .hero{
