@@ -141,7 +141,7 @@ span{
     border: 0;
 }
 .content-banner{
-    background-color: rgb(42, 42, 144);
+    background-color: rgb(38, 38, 124);
     color: white;
     padding: 1rem;
     font-family: sans-serif;
@@ -266,8 +266,11 @@ iframe{
 }
 @media screen and (min-width:1024px) and (max-width:1440px){
     .logo{
-        width: 10rem;
-        height: 5rem;
+        width: 10vw;
+        
+    }
+    .hero-nav{
+        height: 6vw;
     }
     .hero-list a{
         display: inline-block;
@@ -316,7 +319,7 @@ iframe{
     .content-imagem{
         display: flex;
         flex-direction: row-reverse;
-        width: 45vw;
+        width: 45rem;
     }
     .banner-title{
         text-align: center;
@@ -325,7 +328,6 @@ iframe{
     .description-banner{
         display: flex;
         flex-direction: row-reverse;
-        width: 55vw;
         line-height: 3.2rem;
         font-size: 1.7rem;
     }
@@ -340,7 +342,7 @@ iframe{
         font-size: 1.8rem
     }
     .rodape{
-        height: 3vw;
+        height: 2.5vw;
     }
     .rodape-description{
         font-size: 2rem;
