@@ -69,9 +69,6 @@ span{
     border-radius:.5rem;
     background-color: gold;
     margin-bottom: 3rem;
-}
-.click a{
-    text-decoration: none;
     color: black;
 }
 /*Conteudo */
@@ -164,6 +161,9 @@ iframe{
     white-space: pre-line;
     
 }
+.content-imagem{
+    display: none;
+}
 /*Rodape */
 .rodape{
     padding: 1.2rem;
@@ -181,9 +181,7 @@ iframe{
     }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
-    .hero{
-        height: 41rem;
-    }
+
     .banner{
         display: flex;
         width: 80vw;
@@ -199,28 +197,19 @@ iframe{
         width: 39.5rem;
         margin:  0 auto;
     }
-    .click{
-       text-align: right;
-       vertical-align: middle;
-       margin: 0;
-       background-color: green;
-    }
+
     .content-title{
         font-size: 2.2rem;
         margin: 0 1.5rem 1.5rem 1.5rem;
-    }
-    .more-cursos{
-        width: calc(33.333%);
-        margin: 2rem auto;
     }
     .container-banner{
         display: flex;
         flex-direction: row-reverse;
         gap: 2rem;
     }
-    .banner-title{
-       text-align: calc(50rem + 20rem);
-
+    .banner-title {
+       text-align: center;
+       
     }
     .content-imagem{
         display: flex;
