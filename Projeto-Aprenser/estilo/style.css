@@ -7,7 +7,7 @@
 html{
     font-size: 62.5%;
     max-width: 100vw;
-
+    background-color: #e0dfdf; 
 }
 /* Cabeçalho */
 .back-color{
@@ -18,8 +18,14 @@ html{
     background-position: center top;
     max-width: 100vw;
 }
+.header-container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .hero-banner{
-    display: none;
+    width: 16rem;
 }
 .hero-nav{
     display: flex;
@@ -29,7 +35,7 @@ html{
 }
 .logo{
     margin-left: .8rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     width: 8rem;
     margin-bottom: .5rem;
 }
@@ -40,18 +46,21 @@ html{
     align-items: center;
     gap: 2rem;
 }
-.hero-list li{
-    display: flex;
-    outline: 1px solid rgb(218, 206, 39);
-    outline-offset: .5rem;
-    font-size: 1rem;
-}
+
 .hero-list a{
     color: rgb(224, 214, 69);
     text-decoration: none;
+    padding: 1rem;
+    outline: 1px solid gold;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+ .hero-nav a:hover{
+    color: white;
+    background-color: black;
 }
 .main-title{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: sans-serif;
     margin-top:2rem ;
     margin-left: 2rem;
@@ -62,23 +71,26 @@ span{
     text-transform: uppercase;
 }
 .click{
-    margin-left: 2rem;
-    margin-top: 2rem;
+    display: block;
+    width: 5rem;
+    margin-left: 1.5rem;
     padding: .8rem 1.8rem;
     border: 0;
     border-radius:.5rem;
     background-color: gold;
     margin-bottom: 3rem;
     color: black;
+    text-decoration: none;
 }
+
 /*Conteudo */
 .content{
     max-width: 100vw;
-    background-color: #e0dfdf; 
+    
 }
 .content-title{
     text-align: center;
-    margin: 0 1rem 1rem 1rem;
+    margin: 1.8rem;
     font-family: sans-serif;
     font-size:1.8rem ;
     padding-top: 1rem;
@@ -93,16 +105,14 @@ span{
     margin: auto;
     gap: 2rem;
     width: 90%;
-    width: 90%;
+    max-width: 90rem;
 }
 .content-itens{
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: .5rem;
-   
     margin: auto;
-    
     flex: 1 1 calc(33.333% - 2rem);
     max-width: calc(33.333% - 2rem);
     min-width: 25rem;
@@ -157,8 +167,8 @@ iframe{
 .description-map{
     text-align: end;
     width: 90vw;
-    margin: 2rem 2rem 0 2rem;
     font-size: 1.3rem;
+    margin: 2rem;
     font-family: sans-serif;
     white-space: pre-line;
     
@@ -177,44 +187,64 @@ iframe{
     font-family: sans-serif;
     color: white;
 }
-@media screen and (min-width:425px) and (max-width:1024px) {
+@media screen and (min-width:600px) and (max-width:1024px) {
     .content-itens{
         min-width: 10rem;
     }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
-
+    .hero-nav{
+        height: 6vw;
+    }
+    .logo{
+        width: 9rem;
+    }
+    .hero-list{
+        gap: 2.5rem;
+    }
+    .hero-list li{
+        font-size: 1.2rem;
+        outline-offset: .6rem;
+        padding: .3rem ;
+    }
     .banner{
-        display: flex;
         width: 80vw;
         margin: auto;
     }
     .main-title{
-        font-size: 2.6rem;
-        line-height: 4rem;
-        margin:  auto;
+        margin: auto;
     }
     .hero-banner{
-        display: flex;
-        width: 39.5rem;
-        margin:  0 auto;
+        
     }
 
     .content-title{
         font-size: 2.2rem;
-        margin: 0 1.5rem 1.5rem 1.5rem;
     }
     .container-banner{
         display: flex;
         flex-direction: row-reverse;
-        gap: 2rem;
+        gap: 3rem;
+    
     }
     .banner-title {
        text-align: center;
-       
+       font-size: 2.8rem
+    }
+    .description-banner{
+        font-size: 1.3rem;
+        line-height: 2.3rem;
     }
     .content-imagem{
         display: flex;
         width: 40rem;
+    }
+    .title-map{
+        font-size: 3rem;
+    }
+    .description-map{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        margin: 1.5rem;
     }
 }
