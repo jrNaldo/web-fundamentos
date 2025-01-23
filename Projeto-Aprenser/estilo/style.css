@@ -30,9 +30,9 @@ html{
 }
 .hero-nav{
     display: flex;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(36, 36, 36);
     height: 5rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .logo{
     margin-left: .8rem;
@@ -45,20 +45,24 @@ html{
     list-style: none;
     justify-content: end;
     align-items: center;
-    gap: 2rem;
+    gap: .5rem;
 }
 
 .hero-list a{
     color: rgb(224, 214, 69);
     text-decoration: none;
-    padding: .5rem;
+    padding: .7rem;
     outline: 1px solid gold;
     font-size: 1rem;
-    border-radius: .5rem;
 }
  .hero-nav a:hover{
     color: white;
     background-color: black;
+}
+.wrape-container-fixed{
+    position: sticky; 
+    top: 0;
+
 }
 .main-title{
     font-size: 1.8rem;
@@ -210,13 +214,10 @@ iframe{
     .logo{
         width: 9rem;
     }
-    .hero-list{
-        gap: 2.5rem;
-    }
-    .hero-list li{
+
+    .hero-list a{
         font-size: 1.2rem;
-        outline-offset: .6rem;
-        padding: .3rem ;
+        padding: 1rem ;
     }
     .header-container{
         width: 70vw;
@@ -269,15 +270,17 @@ iframe{
         width: 10vw;
         
     }
+    
     .hero-nav{
         height: 6vw;
     }
+    .hero-list{
+        gap: 1rem;
+    }
     .hero-list a{
-        display: inline-block;
-        width: 6rem;
         height: 1.5rem;
         padding-top: 1rem;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     .header-container{
         width: 70vw;
