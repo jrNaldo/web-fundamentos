@@ -354,18 +354,18 @@ iframe{
 }
 @media screen and (min-width:1440px) and (max-width:2560px){
     .logo{
-        width: 11rem;
-        height: 6rem;
+        width: 10rem;
+        height: 5rem;
     }
     .hero-nav{
-        height: 4.3vw;
+        height: 4vw;
     }
     .hero-list{
         gap: 2rem;
     }
     .hero-list a{
         padding: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .hero-banner{
         width: 40vw;
@@ -377,12 +377,12 @@ iframe{
         gap: 6.6rem;
     }
     .main-title{
-        font-size: 3.5rem;
-        line-height: 7rem;
+        font-size: 3rem;
+        line-height: 6rem;
     }
     .click{
-        width: 20rem;
-        font-size: 2rem;
+        width: 18rem;
+        font-size: 1.6rem;
         padding: 1.6rem;
         margin: 2rem;
     }
@@ -390,20 +390,20 @@ iframe{
         max-width: 120rem;
     }
     .content-title{
-        font-size: 4rem;
+        font-size: 3.2rem;
         margin-bottom: 3.5rem;
     }
     .card-title{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
     .descripition-card{
-        font-size: 1.7rem;
-        line-height: 3rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
     }
     .more-cursos{
         width: calc(33.333%);
         padding: 1.6rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .container-banner{
         display: flex;
@@ -415,11 +415,11 @@ iframe{
         width: 40vw;
     }
     .banner-title{
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin-bottom: 1.5rem;
     }
     .description-banner{
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 4.5rem;
     }
     .title-map{
@@ -431,10 +431,11 @@ iframe{
         height: 35vw;
     }
     .description-map{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .rodape-description{
-        font-size: 2rem;
-        padding: 2rem;
+        font-size: 1.8rem;
+        padding: 1.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
