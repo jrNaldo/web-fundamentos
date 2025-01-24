@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 80vw;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.25em;
+            margin-bottom: 1em;
+        }
+        th{
+            background-color: rgb(54, 176, 54);
+            color: white;
+        }
+        td{
+            background-color: rgb(215, 215, 198);
+        }
+        td,th{
+            border:1px solid black;
+            text-align: center;
+            padding: .5em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+        <thead>
+            <th>Area</th>
+            <th>Curso</th>
+            <th>Investimento</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InDesign</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+
+                <td>Fotoshop</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+
+                <td>Ilustrator</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>CSS</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>Javascript</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+
+                <td>PHP</td>
+                <td>R$1000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
