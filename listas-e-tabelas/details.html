@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        details{
+            color: rgb(34, 34, 107);
+            margin: 1em;
+            padding: .5em;
+            background-color: azure;
+            border: 1px solid;
+        }
+        details summary{
+            cursor: pointer;
+        }
+        details[open]{
+            background-color: rgb(180, 197, 208);
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso Web-design</h1>
+    <details>
+        <summary>
+            Pré-Requisitos
+            
+        </summary>
+        <p>Para fazer esse curso é necessario conhecimento de sistema operacional</p>
+    </details>
+    <details open>
+        <summary style="cursor: pointer;">
+            Carga Horaria
+            
+        </summary>
+        <p>180 horas</p>
+    </details>
+</body>
+</html>
