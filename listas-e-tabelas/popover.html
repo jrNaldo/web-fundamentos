@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       :popover-open{
+            width: 300px;
+            padding: 0 12px;
+            border-radius: 12px;
+       }
+       ::backdrop{
+            background-color: rgba(0,0,0,0.32);
+       }
+       .popover-container :popover-open{
+            inset: unset;
+       }
+    </style>
+</head>
+<body>
+    <h1>Curso Web-design-popover</h1>
+    <button popovertarget="mypopover">Toggle Popover</button>
+    <div id="mypopover" popover>Este texto é aberto ao clicar no botão</div>
+    <hr>
+    <button popovertarget="mypopover2">Popover Auto (default)</button>
+    <div id="mypopover2" popover="Auto">Este texto é aberto ao clicar no botão</div>
+    <hr>
+    <button popovertarget="mypopover3">Popover Manual</button>
+    <div id="mypopover3" popover="manual">Este texto nao fecha ao clicar fora</div>
+    <hr>
+    <button popovertarget="mypopover4" popovertargetaction="show"> Show Popover </button>
+    <button popovertarget="mypopover4" popovertargetaction="hide"> hide Popover </button>
+    <div id="mypopover4" popover="manual">Este texto  nao fecha ao clicar fora</div>
+    <hr>
+    <div class="popover-container">
+        <button popovertarget="mypopover5">Toggle Popover dentro de div</button>
+        <div popover id="mypopover5">Texto de ajuda do popover</div>
+    </div>
+    <hr>
+</body>
+</html>
