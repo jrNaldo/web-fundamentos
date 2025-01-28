@@ -1,0 +1,83 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: rgb(11, 117, 203);
+    min-height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+form{
+    width: 90%;
+    min-width: 30rem;
+    max-width: 56rem;
+    font-size: 1.6rem;
+    background-color: white;
+    box-shadow: -.8rem 0px 1rem rgba(0, 0, 0, 0.5) ;
+    border-radius: .5rem;
+}
+fieldset{
+    border: none;
+}
+legend{
+    color: rgb(7, 80, 139);
+    font-size: 2.6rem;
+    margin-right: auto;
+    padding: 3rem 1rem 0 0;
+}
+label,input{
+    display: block;
+    width: 96%;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+label{
+    color: rgb(91, 91, 91);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+input{
+    padding: .7rem;
+    border: 0;
+    border-bottom: 2px solid rgb(11, 117, 203);
+}
+input:invalid:focus{
+    border-bottom: 2px solid rgb(211, 50, 50);
+}
+input:valid:focus{
+    border-bottom: 2px solid rgb(32, 164, 32);
+}
+input:focus{
+    outline: 0;
+    border-bottom: 2px solid rgb(11, 117, 203);
+}
+.action{
+    display: flex ;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.action p{
+    margin-right: 1.3rem;
+    font-size: 1.3rem;
+
+}
+.action a{
+    text-decoration: none;
+}
+.action a:hover{
+    text-decoration: underline;
+}
+.action button{
+    margin-left: 1rem;
+    background-color: rgb(11, 117, 203);
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    padding:  .5rem 1rem;
+    text-transform: uppercase;
+}
