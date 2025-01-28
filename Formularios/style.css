@@ -1,0 +1,50 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+    background-color: #95a5a6;
+    font-family: 'Helvetica seue', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h1{
+    font-size: 2.5em;
+}
+form{
+    background-color: #ecf0f1;
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 10px #333;
+}
+fieldset{
+    border: none;
+}
+
+legend{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: #454e4f;
+}
+
+label,input{
+    display: block;
+    margin:  1rem auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+input{
+    border-radius: .5rem;
+    border: 1px solid #bbb;
+    padding: .75rem;
+    margin-bottom: 2rem;
+}
+
