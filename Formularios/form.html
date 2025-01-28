@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        body{
+            padding-bottom: 80vh;
+        }
+    </style>
 </head>
 <body>
     <form  method="get">
@@ -19,7 +24,6 @@
             <label><input type="radio" name="radio" value="n">Nao <br> <br></label>
             
         </fieldset>
-
         <fieldset>
             <legend>Area de interesse</legend>
             <label >
@@ -36,7 +40,30 @@
             </label>
             <label >
                 <input type="checkbox" name="check" value="java">Java
-            </label>
+            </label> <br> <br>
+
+            
+                <select name="linguagem" required multiple size="1">
+                    <option value="">Selecione uma</option>
+                    <optgroup label="Front-End">
+                        <option value="html">Html</option>
+                        <option value="js">JavaScript</option>
+                        <option value="css">CSS</option>
+                    </optgroup>
+                    <optgroup label="Back-End">
+                        <option value="p">Pithon</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+                </select> <br> <br> 
+                <input type="text" list="linguagem-list">
+                <datalist id="linguagem-list">
+                    <option value="Html">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="Java">
+                    <option value="Php">
+                    <option value="Pithon">
+                </datalist>
         </fieldset>
         <br><input type="submit" value="Enviar"> 
     </form>
