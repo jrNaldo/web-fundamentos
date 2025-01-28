@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accent Color</title>
+    <style>
+        input,progress{
+            accent-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accent color</h1>
+
+    
+    <h2>Range</h2>
+    <label for="volume">Volume</label>
+    <input type="range"id=volume name="volume" min="1" max="11" >
+    <h2>Progrees</h2>
+
+    <label for="iprogress"> Porcentagem da tarefa
+        <progress max="100" value="50" id="iprogress"> 50%</progress>
+    </label>
+
+    <h2>Checkbox</h2>
+    <label >
+        <input type="checkbox" name="interesse" value="html">HTML
+    </label>
+    <label>
+        <input type="checkbox" name="interesse" id="css">CSS
+    </label>
+
+    <h2>Radio</h2>
+
+    <p>Possui atividade extra?</p>
+    <label ><input type="radio" name="radio" value="s">Sim</label>
+    <label><input type="radio" name="radio" value="n">Nao <br> <br></label>
+</body>
+</html>
