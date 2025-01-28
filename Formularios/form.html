@@ -8,6 +8,9 @@
         body{
             padding-bottom: 80vh;
         }
+        textarea{
+            resize: none;
+        }
     </style>
 </head>
 <body>
@@ -15,7 +18,7 @@
         <fieldset>
             <legend>Introdução</legend>
             <label for="imail"> Email</label><br>
-            <input type="email" name="email" id="imail" required> <br> <br>
+            <input type="email" name="email" id="imail" required placeholder="meuemail@gmail.com"> <br> <br>
             <label for="inumero">Quantidade de filhos</label> <br>
             <input type="number" name="numero" id="inumero" min="0" max="1000"> <br> <br>
             <input type="date" name="date" min="1900-01-01"> <br><br>
@@ -27,7 +30,7 @@
         <fieldset>
             <legend>Area de interesse</legend>
             <label >
-                <input type="checkbox" name="check" value="html">Html
+                <input type="checkbox" name="check" value="html" checked>Html
             </label>
             <label >
                 <input type="checkbox" name="check" value="css">CSS
@@ -43,7 +46,7 @@
             </label> <br> <br>
 
             
-                <select name="linguagem" required multiple size="1">
+                <select name="linguagem" required multiple >
                     <option value="">Selecione uma</option>
                     <optgroup label="Front-End">
                         <option value="html">Html</option>
@@ -65,7 +68,34 @@
                     <option value="Pithon">
                 </datalist>
         </fieldset>
-        <br><input type="submit" value="Enviar"> 
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="30" rows="10"  minlength="25" maxlength="225"></textarea> <br> <br>
+            <textarea name="msg" cols="50" rows="8" readonly>
+Contrato de Utilização
+    1.1 Regra 1 
+
+    1.2 Regra 2
+            </textarea> <br> <br>
+            <label for="icheck"> 
+                <input type="checkbox" name="check" id="icheck" required checked>Li e aceito o contrato
+            </label>
+        </fieldset>
+        <br><input type="submit" value="Enviar"> <br> <br>
+        
+        <fieldset>
+            <input type="button" value="Botao"> 
+            <input type="file" name="file">
+            <button type="reset">Limpar</button> <br><br>
+            <input type="range" min="0" max="10" value="2"> <br><br>
+            <input type="time" name="time"> <br><br>
+            <input type="color" > <br> <br>
+        </fieldset> <br>
+    </form>
+    <form action="https://www.google.com/search" target="_blank">
+        <label for="isearch">Pesquise no Google</label>
+        <input type="search" name="q" id="isearch">
     </form>
 </body>
 </html>
