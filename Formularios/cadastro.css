@@ -45,16 +45,20 @@ input{
     padding: .7rem;
     border: 0;
     border-bottom: 2px solid rgb(11, 117, 203);
+    
 }
 input:invalid:focus{
-    border-bottom: 2px solid rgb(211, 50, 50);
+    border: 2px solid rgb(211, 50, 50);
 }
 input:valid:focus{
-    border-bottom: 2px solid rgb(32, 164, 32);
+    border: 2px solid rgb(32, 164, 32);
 }
 input:focus{
     outline: 0;
-    border-bottom: 2px solid rgb(11, 117, 203);
+    border: 2px solid rgb(11, 117, 203);
+    padding-left: 1rem;
+    transition-property: padding;
+    transition-duration: .1s;
 }
 .action{
     display: flex ;
@@ -69,7 +73,7 @@ input:focus{
 .action a{
     text-decoration: none;
 }
-.action a:hover{
+ a:hover{
     text-decoration: underline;
 }
 .action button{
@@ -80,4 +84,45 @@ input:focus{
     border-radius: .5rem;
     padding:  .5rem 1rem;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Login */
+
+.container{
+    display: flex;
+    gap: 2rem;
+}
+ .container .Log{
+    margin-left: 1rem;
+    background-color: rgb(11, 117, 203);
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    padding:  .1rem 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cad{
+    background-color: transparent;
+    border: 0;
+}
+.cad a{
+    color: rgb(0, 87, 158);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.cad a:hover{
+    text-decoration: underline;
+}
+.container-itens{
+    display: flex;
+    justify-content: space-between;
+    gap: 15rem;
+}
+p a{
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
 }
