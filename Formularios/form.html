@@ -9,15 +9,36 @@
     <form  method="get">
         <fieldset>
             <legend>Introdução</legend>
-            <input type="email" name="email" required> <br> <br>
+            <label for="imail"> Email</label><br>
+            <input type="email" name="email" id="imail" required> <br> <br>
             <label for="inumero">Quantidade de filhos</label> <br>
             <input type="number" name="numero" id="inumero" min="0" max="1000"> <br> <br>
             <input type="date" name="date" min="1900-01-01"> <br><br>
             <p>Possui atividade extra?</p>
-            <label ><input type="radio" name="radio" id="">Sim</label>
-            <label><input type="radio" name="radio" id="">Nao <br> <br></label>
-            <input type="submit" value="Enviar">
+            <label ><input type="radio" name="radio" value="s">Sim</label>
+            <label><input type="radio" name="radio" value="n">Nao <br> <br></label>
+            
         </fieldset>
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+            <label >
+                <input type="checkbox" name="check" value="html">Html
+            </label>
+            <label >
+                <input type="checkbox" name="check" value="css">CSS
+            </label>
+            <label >
+                <input type="checkbox" name="check" value="pithon">Pithon
+            </label>
+            <label >
+                <input type="checkbox" name="check" value="js">JS
+            </label>
+            <label >
+                <input type="checkbox" name="check" value="java">Java
+            </label>
+        </fieldset>
+        <br><input type="submit" value="Enviar"> 
     </form>
 </body>
 </html>
