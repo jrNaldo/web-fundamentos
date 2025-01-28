@@ -45,6 +45,10 @@ input,textarea{
     border-bottom-color: #bbb;
     padding: 1.2rem;
     margin: .8rem 0 2.4rem;
+    outline: none;
+}
+textarea{
+    resize: none;
 }
 .btn{
     background-color: #2a2727;
@@ -54,4 +58,16 @@ input,textarea{
     font-size: 1.6rem;
     border: none;
     border-radius: .5rem;
+}
+input:invalid:focus, textarea:invalid:focus{
+    
+    border-bottom: 2px solid #ff000d;
+}
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid #0ec72a;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 2px solid #8e999a;
+    background-color: #2a2727;
 }
