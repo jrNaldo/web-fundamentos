@@ -13,7 +13,7 @@ div{
 p{
     margin: 0;
 }
-div::before{
+div::after{
     content: "";
     display: inline-block;
     width: 1em;
@@ -22,4 +22,9 @@ div::before{
     position: absolute;
     right: 0;
     bottom: 0;
+}
+div::before{
+    content: url(imagem/imagem.png);
+    float: left;
+    margin-right: 1em;
 }
