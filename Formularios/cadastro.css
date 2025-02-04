@@ -78,7 +78,7 @@ input:focus{
 }
 .action button{
     margin-left: 1rem;
-    background-color: rgb(11, 117, 203);
+    background-color: #0b75cb;
     border: none;
     color: white;
     border-radius: .5rem;
