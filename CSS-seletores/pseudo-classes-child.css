@@ -1,0 +1,22 @@
+@charset "UTF-8";
+div :first-child{
+    color: rgb(255, 0, 0);
+}
+p:first-child{
+    color: rgb(255, 255, 255);
+}
+div :last-child{
+    color: red;
+}
+p:nth-child(3){
+    background-color: darkkhaki;
+}
+p:first-of-type{
+    background-color: rgb(58, 166, 0);
+}
+li:nth-child(odd){
+    color: rgb(188, 0, 0);
+}
+li:nth-child(2n){
+    color: rgb(0, 0, 156);
+}
