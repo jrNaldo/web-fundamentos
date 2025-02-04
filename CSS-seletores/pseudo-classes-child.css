@@ -14,9 +14,7 @@ p:nth-child(3){
 p:first-of-type{
     background-color: rgb(58, 166, 0);
 }
-li:nth-child(odd){
-    color: rgb(188, 0, 0);
-}
-li:nth-child(2n){
+
+li:nth-child(3n - 2){
     color: rgb(0, 0, 156);
 }
