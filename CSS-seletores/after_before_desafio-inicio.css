@@ -10,16 +10,16 @@ a[href$=".pdf"]::before{
     content: url(imagem/pdf-icon.gif);
     margin-right: 7px;
 }
+input[type="checkbox"]:not(:disabled) + label{
+    color: red;
+}
 input[type="checkbox"]:checked + label{
     color: green;
 }
-
 input[type="checkbox"]:disabled + label{
     color: rgb(0, 11, 128);
 }
-input[type="checkbox"]:not(:disabled) + label{
-    color: rgb(128, 0, 0);
-}
- li li:nth-child(3) {
+
+li li:nth-child(3) {
     background-color: rgb(224, 187, 0);
 }
