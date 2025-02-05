@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        button{
+            color: white;
+            background-color: #7c7c7c;
+            cursor: pointer;
+        }
+        button:disabled{
+            opacity: .5;
+        }
+        p:empty::before{
+            content: "!Paragrafo Vazio!";
+        }
+        a:focus,a:hover{
+            background-color: yellow;
+        }
+        a:active{
+            color: red;
+        }
+        textarea:focus{
+            outline: 2px solid rgb(0, 0, 0);
+        }
+        a:any-link{
+            color: green ;
+            text-decoration: none;
+        }
+        
+        input:is( :autofill) {
+             border: 3px solid darkorange;
+        }
+        input:default{
+            border: 0;
+            outline: 2px solid deeppink;
+        }
+        input:default + label{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+   <button>Vai</button> 
+   <button disabled>Vai disabled</button>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minima?</p>
+   <p></p>
+   <p></p>
+   <ul>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#" class="especial">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+   </ul>
+   <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+   <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+   <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+   <p tabindex="1">Lorem ipsum dolor sit amet.</p>
+   <p>Lorem ipsum dolor sit amet.</p>
+   <textarea name="" id="" cols="30"></textarea> <br><br>
+   <label for="email">email</label>
+   <input type="email" id="email" name="email">
+   <input type="radio" name="season" id="fall" value="fall" checked />
+   <label for="fall">Fall</label>
+
+  <input type="radio" name="season" id="winter" value="winter" checked/>
+  <label for="winter">Winter</label>
+
+  
+</body>
+</html> 
