@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform( )</title>
+    <style>
+        div{
+            outline: 1px solid #888;
+            width: 300px;
+            margin: .5em auto;
+            
+        }
+        p{
+            width: 100%;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+
+        .div1 .destaque{
+            transform: translate(50%);
+        }
+        .div2 .destaque{
+            position: relative;
+            top: -50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, consequatur.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, consequatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, consequatur.</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, consequatur.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, consequatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, consequatur.</p>
+    </div>
+</body>
+</html>
