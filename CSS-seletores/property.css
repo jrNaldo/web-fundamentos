@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@property --cor-sucesso {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: green;
+}
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+@property --cor-erro{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: red;
+}
+:root{
+    /*--cor-erro: rgb(255, 154, 22);
+    --angle: 0deg;*/
+}
+body{
+    color: whitesmoke;
+    background-color: rgb(23, 0, 45);
+}
+
+b{
+    color: var(--cor-erro);
+}
+.anima{
+    width: 200px;
+    height: 200px;
+    background-color: var(--cor-sucesso);
+    transform: rotate(var(--angle));
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        --angle:360deg
+    }
+}

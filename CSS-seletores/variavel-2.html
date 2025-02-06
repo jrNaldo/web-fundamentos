@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis Parte 2</title>
+    <style>
+        :root{
+            --cor-sucesso: rgb(0, 193, 0);
+            --cor-erro: rgb(255, 154, 22);
+            --angle: 0deg;
+        }
+        body{
+            --cor-erro: rgb(149, 0, 255);
+            color: whitesmoke;
+            background-color: rgb(23, 0, 45);
+        }
+        .container{
+            --cor-erro: rgb(255, 0, 43);
+        }
+        .div2{
+            --cor-erro: rgb(0, 179, 255);
+        }
+        b{
+            color: var(--cor-erro);
+        }
+        .anima{
+            width: 200px;
+            height: 200px;
+            background-color: var(--cor-sucesso);
+            transform: rotate(var(--angle));
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate{
+            to{
+                --angle:360deg
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <p>Lorem, ipsum <b>dolor</b>.</p>
+        </div>
+        <div class="div2">
+            <p>Lorem, <b>ipsum </b>dolor.</p>
+        </div>
+        
+    </div>
+    <p>teste</p>
+     <div class="anima">Anima</div>
+</body>
+</html>
