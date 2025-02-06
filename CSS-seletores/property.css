@@ -14,10 +14,7 @@
     inherits: false;
     initial-value: red;
 }
-:root{
-    /*--cor-erro: rgb(255, 154, 22);
-    --angle: 0deg;*/
-}
+
 body{
     color: whitesmoke;
     background-color: rgb(23, 0, 45);
