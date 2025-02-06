@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classe -has-</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p a{
+            background-color: yellow;
+        }
+        p:has(a){
+            background-color: rgb(151, 151, 151);
+        }
+        p:has(.TESTE){
+            background-color: blueviolet;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            max-width: 100vw;
+        }
+       caption{
+        font-size: 1.625em;
+        margin-bottom: .5em;
+       }
+        td,th{
+            border: 2px solid;
+        }
+        label,input{
+            margin: 5px;
+        }
+        tr:nth-child(even){
+            background-color: #ffe6e6;
+        }
+        tr:nth-child(odd){
+            background-color: white;
+        }
+        tr:hover{
+            background-color: #e9e9e9;
+        }
+        tr:has( td:first-child input[type="radio"]:checked) {
+            background-color: rgb(175, 255, 166);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, dicta! Vitae itaque maxime consequatur est corporis <a href="#" class="TESTE">Saiba mais aqui</a>e consequuntur, inventore libero doloribus rerum esse ut suscipit cum vero quaerat similique optio.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, dicta! Vitae itaque maxime consequatur est corporis beatae <a href="#">Saiba mais</a>, inventore libero doloribus rerum esse ut suscipit cum vero quaerat similique optio.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, dicta! Vitae itaque maxime consequatur est corporis beatae consequuntur, inventore libero doloribus rerum esse ut suscipit cum vero quaerat similique optio.</p>
+    <table>
+        <caption>Tabela de Dados</caption>
+        <tr>
+            <th>Genero</th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="M" >M
+                    </label>
+                    <label >
+                        <input type="radio" name="radio" id="radio" value="F" >F
+                    </label>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="nome">Nome </label>
+                    <input type="text" name="nome" id="nome" required>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" required>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="M" >M
+                    </label>
+                    <label >
+                        <input type="radio" name="radio" id="radio" value="F" >F
+                    </label>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="nome">Nome </label>
+                    <input type="text" name="nome" id="nome" required>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" required>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="M" >M
+                    </label>
+                    <label >
+                        <input type="radio" name="radio" id="radio" value="F" >F
+                    </label>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="nome">Nome </label>
+                    <input type="text" name="nome" id="nome" required>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" required>
+                </form>
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="M" >M
+                    </label>
+                    <label >
+                        <input type="radio" name="radio" id="radio" value="F" >F
+                    </label>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="nome">Nome </label>
+                    <input type="text" name="nome" id="nome" required>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" required>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    
+                    <label>
+                        <input type="radio" name="radio" id="radio" value="M" >M
+                    </label>
+                    <label >
+                        <input type="radio" name="radio" id="radio" value="F" >F
+                    </label>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="nome">Nome </label>
+                    <input type="text" name="nome" id="nome" required>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" required>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
