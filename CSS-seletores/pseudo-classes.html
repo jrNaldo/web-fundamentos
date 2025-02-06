@@ -16,6 +16,9 @@
         p:empty::before{
             content: "!Paragrafo Vazio!";
         }
+        a{
+            display: block;
+        }
         a:focus,a:hover{
             background-color: yellow;
         }
@@ -40,14 +43,54 @@
         input:default + label{
             color: blueviolet;
         }
+        input[type="text"]:read-write{
+            border: 2px solid rgb(255, 0, 0);
+            background-color: #999;
+            padding: .4em;
+        }
+        input[type="text"]:read-only{
+            background-color: tomato;
+        }
+        input[type="text"]:disabled{
+            background-color: white;
+        }
+        input[type="text"]::placeholder{
+            color: rgb(0, 255, 255);
+        }
+        p:only-child{
+            background-color: orange;
+            color: white;
+            padding: .3em;
+        }
+        p:read-write{
+            outline: none;
+            border-bottom: 2px solid orangered;
+        }
+        p:read-write:focus{
+            outline: none;
+        }
+        div:target{
+            border: 4px dashed red;
+        }
+        input[type="number"]:out-of-range{
+            background-color: red;
+            color: white;
+        }
+        input[type="number"]:valid{
+            color: white;
+            background-color: rgb(0, 180, 0);
+        }
     </style>
 </head>
 <body>
-   <button>Vai</button> 
-   <button disabled>Vai disabled</button>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minima?</p>
-   <p></p>
-   <p></p>
+    <div id="top">
+        <a href="#titulo">Vai para o titulo</a>
+        <button>Vai</button> 
+        <button disabled>Vai disabled</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minima?</p>
+        <p></p>
+        <p></p>
+        </div>
    <ul>
     <li><a href="#">Link falso</a></li>
     <li><a href="#" class="especial">Link falso</a></li>
@@ -58,17 +101,43 @@
    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
-   <p tabindex="1">Lorem ipsum dolor sit amet.</p>
-   <p>Lorem ipsum dolor sit amet.</p>
+   <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+   <p tabindex="0">Lorem ipsum dolor sit amet.</p>
    <textarea name="" id="" cols="30"></textarea> <br><br>
-   <label for="email">email</label>
+   <label for="email">email</label> 
    <input type="email" id="email" name="email">
    <input type="radio" name="season" id="fall" value="fall" checked />
-   <label for="fall">Fall</label>
+   <label for="fall">Fall</label> 
 
   <input type="radio" name="season" id="winter" value="winter" />
-  <label for="winter">Winter</label>
+  <label for="winter">Winter</label> <br> <br>
 
-  
+  <form action="#">
+    <input type="text" value="valor inicial"><br> <br>
+    <input type="text"><br> <br>
+    <input type="text" value="valor" disabled><br> <br>
+    <input type="text" value="valor" readonly><br> <br>
+    <input type="text" placeholder="placeholder">
+  </form>
+
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <hr>
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p contenteditable>Paragrafo Editavel</p>
+  </div>
+
+  <div id="titulo">
+      <h1 >titulo</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nihil corporis nesciunt eligendi, repellat accusantium quas, esse debitis autem doloribus consequuntur error. Saepe vitae magni architecto. Veniam, eos? Temporibus, nisi?</p>
+      <a href="#top">Vai para cima</a>
+  </div> <br><br>
+  <form action="#">
+    <label for="num">Numero</label>
+    <input type="number" min="0" max="100" id="num" name="num">
+  </form>
 </body>
 </html> 
