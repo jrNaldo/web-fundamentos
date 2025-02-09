@@ -9,39 +9,30 @@
         input[type="checkbox"]{
             display: none;
         }
-        input[type="checkbox"] label{
-            width: 5px;
-        }
-        input[type="checkbox"] + label span{
+        label span{
             display: inline-block;
-            width: 25px;
-            height: 25px;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
             background-color: red;
             border-radius: 4px;
-
         }
         input[type="checkbox"]:checked + label span{
             background-color: blue;
+            position: relative;
         }
-        input[type="checkbox"] + label div{
-            display: none;
-        }
-        input[type="checkbox"]:checked + label .div1{
-            display: inline-block;
-            background-color: rgb(255, 255, 255);
-            width: 10px;
-            height: 2px;
-            margin-bottom: 5px;
-            transform: translate(-25px) rotate(35deg);
-        }
-        input[type="checkbox"]:checked + label .div2{
-            display: inline-block;
-            background-color: rgb(255, 255, 255);
-            width: 20px;
-            height: 2px;
-            margin-bottom: 2px;
-            transform-origin: left bottom;
-            transform: translate(-30px ) rotate(-65deg);
+        input[type="checkbox"]:checked + label span::before{
+            content: "";
+            display: block;
+            border: .077em solid rgb(255, 255, 255);
+            position: absolute;
+            top: .077em;
+            left: .38em;
+            right: .28em;
+            bottom: .26em;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(40deg);
         }
     </style>
 </head>
@@ -50,22 +41,16 @@
     <input type="checkbox" name="checkbox" id="HTML" checked>
     <label for="HTML">
         <span></span>
-        <div class="div1"></div>
-        <div class="div2"></div>
         HTML
     </label>
     <input type="checkbox" name="checkbox" id="CSS">
     <label for="CSS">
         <span></span>
-        <div class="div1"></div>
-        <div class="div2"></div>
         CSS
     </label>
     <input type="checkbox" name="checkbox" id="JS">
     <label for="JS">
         <span></span>
-        <div class="div1"></div>
-        <div class="div2"></div>
         JS
     </label>
 </body>
