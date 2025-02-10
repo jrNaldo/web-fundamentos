@@ -5,12 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Checkbox</title>
     <style>
-        
+        .switch span{
+            display: inline-block;
+            outline: 2px solid orange ;
+            width: 2.5em;
+            height: 1.2em;
+            border-radius: .7em;
+            overflow: hidden;
+            position: relative;
+        }
+        .switch input:checked+span::after {
+            transform: translateX(100%);
+            background-color: #7a8184;
+        }
+
+        .switch input:checked + span::before{
+            content: "";
+            display: block;
+            width: 1em;
+            height: 1em;
+            background-color: black;
+            border-radius: 50%;
+            transition: all 1s ease;
+            transform: translateX(120%);
+            position: absolute;
+            top: 1.2px;
+            left: 0;
+            z-index: 1;
+        }
+        .switch span::before{
+            content: "";
+            display:block;
+            width: 1em;
+            border-radius: 8px;
+            height: 1em;
+            background-color: rgb(0, 0, 0);
+            transform: translateX(0%);
+            position: absolute;
+            top: 1.2px;
+            left: 0;
+            transition: transform 1s ease;
+            z-index: 1;
+            
+        }
     </style>
 </head>
 <body>
     <label class="switch">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" checked>
         <span></span>
         HTML
     </label>
