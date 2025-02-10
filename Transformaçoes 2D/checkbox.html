@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkbox</title>
     <style>
-    
-        input[type="checkbox"]{
-            display: none;
+        .check1{
+            display: none; 
+
         }
         label span{
             display: inline-block;
@@ -17,11 +17,11 @@
             background-color: red;
             border-radius: 4px;
         }
-        input[type="checkbox"]:checked + label span{
+        .check1:checked + label span{
             background-color: blue;
             position: relative;
         }
-        input[type="checkbox"]:checked + label span::before{
+        .check1:checked + label span::before{
             content: "";
             display: block;
             border: .077em solid rgb(255, 255, 255);
@@ -34,24 +34,83 @@
             border-left-color: transparent;
             transform: rotate(40deg);
         }
+        .lbl2 span{
+            display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            position: relative;
+            transition: background-color .5s;
+        }
+        .lbl2 input[type="checkbox"]:checked+span{
+            background-color: green;
+            
+        }
+        .lbl2 input[type="checkbox"]+span::before{
+            content: "";
+            display: block;
+            border: .077em solid rgb(255, 255, 255);
+            position: absolute;
+            top: .077em;
+            left: .38em;
+            right: .28em;
+            bottom: .26em;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(40deg);
+            transition: opacity .3;
+            opacity: 0;
+        }
+        .lbl2 input[type="checkbox"]:checked+span::before{
+            opacity: 1;
+        }
+        .lbl2 input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+        .lbl2 input[type="checkbox"]:focus+span{
+            outline: 2px solid black;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <h1>Checkbox</h1>
-    <input type="checkbox" name="checkbox" id="HTML" checked>
+    <input type="checkbox" name="checkbox" id="HTML" checked class="check1">
     <label for="HTML">
         <span></span>
         HTML
     </label>
-    <input type="checkbox" name="checkbox" id="CSS">
+    <input type="checkbox" name="checkbox" id="CSS" class="check1">
     <label for="CSS">
         <span></span>
         CSS
     </label>
-    <input type="checkbox" name="checkbox" id="JS">
+    <input type="checkbox" name="checkbox" id="JS" class="check1">
     <label for="JS">
         <span></span>
         JS
     </label>
+    <hr>
+    <label class="lbl2">
+        <input type="checkbox" >
+        <span></span>
+        HTML
+    </label>
+    <label class="lbl2" >
+        <input type="checkbox" >
+        <span></span>
+        CSS
+    </label>
+    <label class="lbl2">
+        <input type="checkbox" >
+        <span></span>
+        JS
+    </label >
 </body>
 </html>
