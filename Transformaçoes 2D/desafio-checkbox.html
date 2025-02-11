@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Checkbox</title>
     <style>
+        input[type="checkbox"]{
+            width: .1px;
+            height: .1px;
+            position: absolute;
+            margin: 0;
+            overflow: hidden;
+            outline: none;
+        }
         .switch span{
             display: inline-block;
             outline: 2px solid orange ;
@@ -46,7 +54,10 @@
             left: 0;
             transition: transform 1s ease;
             z-index: 1;
-            
+        }
+        .switch input:focus+span{
+            outline-offset: 2px;
+            outline: 2px solid black;
         }
     </style>
 </head>
