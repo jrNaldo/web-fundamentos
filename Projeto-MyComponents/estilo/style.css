@@ -16,11 +16,22 @@ body{
     background-color: #ababad;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    
+    line-height: 1.7;
+}
+h1{
+    font-size: 4rem;
+    color: #a9a7a7;
+}
+h2{
+    padding-top: 3rem;
+}
+h2, h3, h4, h5, h6{
+    color: var(--primary-color);
 }
 .main-content{
     background-color: #33363f;
     flex: 1 0;
+    padding: 6.5rem 6rem 7.5rem;
 }
 .header-content{
     flex: 0 0  26rem;
@@ -35,13 +46,9 @@ body{
     max-width: 10rem;
     margin-top: 5rem;
     margin-bottom:3rem ;
-
 }
 a{
     color: inherit;
-}
-.nav-content{
-
 }
 .main-list{
     list-style-type: none;
@@ -50,26 +57,21 @@ a{
 }
 .main-list li{
     text-align: right;
-    padding: 1.5rem;
     border-bottom: 2px solid rgb(167, 167, 167);
     position: relative;
-    margin-bottom: 1rem;
 }
 .main-list a{
+    display: block;
     text-decoration: none;
     position: relative;
-}
-.main-list a::after , .main-list li::after{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: absolute;
-    transform: translate(-10% , -80%);
-}
-.main-list a::after:hover , .main-list li::after:hover{
-    content: "";
-    opacity: .3:
+    background-color: transparent;
 
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+.nav-content ul a:hover , .nav-content ul li:hover{
+    display: block;
+    background-color: #444856;
+    padding-right: .8rem;
+    transition: all 1s ease;
 }
