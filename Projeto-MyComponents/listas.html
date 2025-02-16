@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyComponents">
+    <meta name="author" content="Naldo">
+    <meta name="keywords" content="JS, HTML e CSS">
+    <title>My - Listas</title>
+    <link rel="stylesheet" href="estilo/normalize.css">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header class="header-content">
+        <nav class="nav-content">
+            <a href="#">
+                <img src="imagem/perfil.png" alt="Foto de Perfil" class="perfil-img">
+            </a>
+
+            <ul class="main-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tipografia.html">Tipografia</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="botoes.html">Botões</a></li>
+                    <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1>My Components </h1>
+        <article class="destaque">
+            <h2>Listas</h2>
+            <p>Listas podem ser ordenadas, nao ordenadas e aninhadas,ou seja, uma dentro da outra</p>
+        </article>
+        <section>
+            <div class="row">
+                <div>
+                    <h3>Não Ordenada</h3>
+                    <ul>
+                        <li>item 01</li>
+                        <li>item 02</li>
+                        <li>item 03</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ordenada</h3>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Alternates</h3>
+                    <ul class="alternate">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <h3>Não Ordenada</h3>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2
+                            <ul>
+                                <li>item 2.1</li>
+                                <li>item 2.2
+                                    <ul>
+                                        <li>item 2.2.1</li>
+                                        <li>item 2.2.2</li>
+                                        <li>item 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>item 2.3</li>
+                            </ul>
+                        </li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ordenadas</h3>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 2
+                            <ol>
+                                <li>item 2.1</li>
+                                <li>item 2.2
+                                    <ol>
+                                        <li>item 2.2.1</li>
+                                        <li>item 2.2.2</li>
+                                        <li>item 2.2.3</li>
+                                    </ol>
+                                </li>
+                                <li>item 2.3</li>
+                            </ol>
+                        </li>
+                        <li>item 3</li> 
+                    </ol>
+                </div>
+                <div>
+                    <h3>Ambas</h3>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 2
+                            <ul>
+                                <li>item 2.1</li>
+                                <li>item 2.2</li>
+                                <li>item 2.3</li>
+                            </ul>
+                        </li>
+                        <li>item 3</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
