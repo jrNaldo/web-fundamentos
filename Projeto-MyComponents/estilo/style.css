@@ -67,7 +67,7 @@ pre{
 .main-content{
     background-color: #33363f;
     flex: 1 0;
-    padding: 6.5rem 6rem 7.5rem;
+    padding: 6.5rem 3rem 7.5rem;
 }
 .header-content{
     flex: 0 0  26rem;
@@ -115,6 +115,31 @@ a{
     padding-right: .8rem;
     transition: all 1s ease;
 }
+.container{
+    margin-bottom: 3rem;
+}
 .card{
     max-width: 74rem;
+    background-color: var(--secondary-color);
+    border-radius: .9rem;
+}
+.card > img{
+    border-top-right-radius: .8rem;
+    border-top-left-radius: .8rem;
+}
+.card-title{
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+.card-content{
+    padding: 1rem;
+    margin: 0;
+}
+.card img{
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    gap: 3rem;
 }
