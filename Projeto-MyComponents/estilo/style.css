@@ -33,10 +33,17 @@ h2, h3, h4, h5, h6{
     color: var(--primary-color);
     margin: 0;
 }
+.destaque > h2{
+    padding-top: 0;
+}
+.destaque > p{
+    padding-bottom: 0;
+}
 .destaque{
     border-left: .2rem solid var(--primary-color);
     font-size: 1.7rem;
     padding-left: 2rem;
+
 }
 article{
     margin: 2.2rem 0;
@@ -107,4 +114,7 @@ a{
     background-color: #444856;
     padding-right: .8rem;
     transition: all 1s ease;
+}
+.card{
+    max-width: 74rem;
 }
