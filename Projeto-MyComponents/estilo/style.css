@@ -43,7 +43,7 @@ h2, h3, h4, h5, h6{
     border-left: .2rem solid var(--primary-color);
     font-size: 1.7rem;
     padding-left: 2rem;
-
+    margin-bottom: 2rem;
 }
 article{
     margin: 2.2rem 0;
@@ -142,4 +142,8 @@ a{
 .row{
     display: flex;
     gap: 3rem;
+    justify-content: space-between;
+}
+.row > *{
+    flex: 1 0 0%;
 }
