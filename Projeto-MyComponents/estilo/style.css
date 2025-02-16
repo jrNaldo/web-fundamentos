@@ -31,6 +31,13 @@ h3 + p{
 h2, h3, h4, h5, h6{
     color: var(--primary-color);
 }
+p{
+    padding: 1rem 0 ;
+}
+blockquote > p , blockquote > cite{
+    padding-left: 2rem;
+}
+
 .underline{
     text-decoration: red wavy underline;
 }
