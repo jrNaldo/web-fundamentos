@@ -21,6 +21,7 @@ body{
 h1{
     font-size: 4rem;
     color: #a9a7a7;
+    margin: 2rem 0;
 }
 h2{
     padding-top: 3rem;
@@ -30,6 +31,15 @@ h3 + p{
 }
 h2, h3, h4, h5, h6{
     color: var(--primary-color);
+    margin: 0;
+}
+.destaque{
+    border-left: .2rem solid var(--primary-color);
+    font-size: 1.7rem;
+    padding-left: 2rem;
+}
+article{
+    margin: 2.2rem 0;
 }
 p{
     padding: 1rem 0 ;
@@ -87,6 +97,12 @@ a{
     padding-top: 1.5rem;
 }
 .nav-content ul a:hover , .nav-content ul li:hover{
+    display: block;
+    background-color: #444856;
+    padding-right: .8rem;
+    transition: all 1s ease;
+}
+.nav-content ul a:focus , .nav-content ul li:focus{
     display: block;
     background-color: #444856;
     padding-right: .8rem;
