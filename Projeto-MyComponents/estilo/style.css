@@ -182,17 +182,35 @@ input,textarea, select{
     margin-top:.5rem ;
     margin-bottom: .5rem;
 }
+.btn + .btn{
+    margin-left: 2rem;
+}
 .btn{
-    background-color: var(--secondary-color);
+    background-color: #23242a;
     color: white;
     outline: 2px solid #23242a;
+    padding: .6em 1em;
+    border-radius: .5rem;
+    border: 0;
 }
 .btn:hover{
-    background-color: #3d4049;
+    background-color: #444751;
     transition: all .5s ease;
     color: white;
 
 }
 .btn-2{
     background-color: transparent;
+}
+.btn-big{
+    font-size: 1.5em;
+}
+.btn-full{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.btn-full + .btn-full{
+    margin-left: 0%;
+    margin-top: 2rem;
 }
