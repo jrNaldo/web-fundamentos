@@ -33,7 +33,7 @@
         <section>
             <h2>Entre em contato</h2>
             <div class="row">
-                <form action="" autocomplete="off">
+                <form action="" autocomplete="off" >
                     <div class="row">
                         <div>
                             <label for="nome">Nome</label>
@@ -54,6 +54,27 @@
                     <p><b>Email</b> email@server.com</p>
                 </address>
             </div>
+        </section>
+        <section>
+            <h2>Quiz</h2>
+            <form action=""class="form-quiz">
+                <label for="tecnologia">Qual é a sua linguagem favorita?</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecione</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+                <label>Baixa Prioridade <input type="radio" name="prioridade" value="baixa"></label>
+                <label>Media Prioridade <input type="radio" name="prioridade" value="media"></label>
+                <label>Alta Prioridade <input type="radio" name="prioridade" value="alta"></label>
+                <label><input type="checkbox" name="copy" value="true"> Envie uma copia</label>
+                <label><input type="checkbox" name="human" value="true"> Sou um humano</label>
+                <div class="row">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" class="btn-2 btn">
+                </div>
+            </form>
         </section>
     </main>
 </body>

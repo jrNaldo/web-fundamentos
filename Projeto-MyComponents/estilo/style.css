@@ -3,6 +3,7 @@
     --primary-color:#ff7833;
     --secondary-color: #31333b;
     --text-color:#e7e7e7;
+    --default-gap:3rem;
 }
 *{
     margin: 0;
@@ -141,7 +142,7 @@ a{
 }
 .row{
     display: flex;
-    gap: 3rem;
+    gap: var(--default-gap);
     justify-content: space-between;
 }
 .row > *{
@@ -166,6 +167,14 @@ input:not(input[type="radio"], input[type="checkbox"]),label{
     width: 100%;
     box-sizing: border-box;
 }
+select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-quiz{
+    /* width: calc(50% - 1.5rem); */
+    width: calc(50% - var(--default-gap) / 2);
+}
 input,textarea, select{
     padding: 1.2rem;
     border-radius: .5rem;
@@ -184,6 +193,6 @@ input,textarea, select{
     color: white;
 
 }
-textarea{
-    
+.btn-2{
+    background-color: transparent;
 }
