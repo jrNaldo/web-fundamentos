@@ -214,3 +214,40 @@ input,textarea, select{
     margin-left: 0%;
     margin-top: 2rem;
 }
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td:last-child{
+    text-align: right;
+}
+.table th:last-child{
+    text-align: right;
+}
+td,th{
+    padding: .8rem;
+
+
+}
+tr,th{
+    text-align: left;
+}
+.table-horizontal tr:not(:last-child){
+    border-bottom: 2px solid rgb(37, 35, 45);
+    
+}
+.table-horizontal thead>tr{
+    border-bottom: 2px solid rgb(37, 35, 45);    
+}
+.table-zebrada tr:nth-of-type(even){
+    background-color: #23242a;
+} 
+.table-vertical td:not(:last-child){
+    border-right: 2px solid rgb(37, 35, 45);
+}
+.table-vertical th:not(:last-child){
+    border-right: 2px solid rgb(37, 35, 45);
+}
+.table-title{
+    margin-bottom: 1.5rem;
+}
