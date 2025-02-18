@@ -18,6 +18,10 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7;
+    background-image: url(../imagem/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1{
     font-size: 4rem;
@@ -66,13 +70,14 @@ pre{
     text-decoration: red wavy underline;
 }
 .main-content{
-    background-color: #33363f;
+    background-color: rgba(51, 54, 63, 0.6);
     flex: 1 0;
     padding: 6.5rem 3rem 7.5rem;
 }
 .header-content{
     flex: 0 0  26rem;
-    background-color: var(--secondary-color);
+    background-color: rgba(49, 51, 59, .8);
+    
 }
 .main-content, .header-content{
     font-size: 1.6rem;
@@ -103,6 +108,11 @@ a{
 
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
+}
+.nav-content{
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .nav-content ul a:hover , .nav-content ul li:hover{
     display: block;
