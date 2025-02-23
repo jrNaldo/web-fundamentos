@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
-    background-image: url(imagens/tile.png);
+    background-image: linear-gradient(72deg, blue, rgb(251, 0, 0)),url(imagens/tile.png);
+    background-attachment: fixed,scroll;
+    background-blend-mode:difference;
 }
 
 .cores{
