@@ -97,3 +97,17 @@ section{
 .cores:nth-of-type(19){
     background-image: repeating-linear-gradient( to  top right,white 0%,white 5px, black 5px,black 10px );
 }
+.cores:nth-of-type(20){
+    background-image: repeating-radial-gradient( white 0%,white 5px, black 10px,black 20px );
+}
+.cores:nth-of-type(21){
+    background-image: repeating-conic-gradient( white 0%,white 10deg, black 10deg,black 20deg );
+}
+.cores:nth-of-type(22){
+    background-image: repeating-conic-gradient( transparent 0%,transparent 10deg, black 10deg,black 20deg ), repeating-radial-gradient(red 0%, transparent, blue 20%);
+    background-attachment: fixed, scroll;
+}
+.cores:nth-of-type(23){
+    background-image: repeating-radial-gradient(red 0%, transparent, blue 20%),repeating-linear-gradient(red, blue );
+    background-attachment:  scroll, fixed;
+}
