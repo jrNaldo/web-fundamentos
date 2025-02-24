@@ -48,8 +48,11 @@ section{
     background-image: radial-gradient(blue 30%,color-mix( in srgb,red, transparent), green 50%,yellow);
 }
 .cores:nth-of-type(6){
-    background-image: radial-gradient(circle,blue 30%,color-mix( in srgb,red, transparent), green 50%,yellow);
+    background-image: radial-gradient(circle,blue 30%,color-mix( in srgb,red, transparent),green 50%,yellow);
 }
 .cores:nth-of-type(7){
-    background-image: radial-gradient(circle,blue ,color-mix( in srgb,red, transparent), green ,yellow);
+    background-image: radial-gradient(circle,blue ,color-mix( in srgb,red, transparent),green ,yellow);
+}
+.cores:nth-of-type(8){
+    background-image: radial-gradient(circle at 12%  50%, blue ,red 20%);
 }
