@@ -94,3 +94,6 @@ section{
 .cores:nth-of-type(18):hover{
     filter:hue-rotate(360deg);
 }
+.cores:nth-of-type(19){
+    background-image: repeating-linear-gradient( to  top right,white 0%,white 5px, black 5px,black 10px );
+}
