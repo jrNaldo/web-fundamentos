@@ -40,3 +40,7 @@ section{
 .cores:nth-of-type(3):hover{
     background-color: hsl(32deg, 68%, 44%);
 }
+.cores:nth-of-type(4){
+    background-image: linear-gradient(70deg, blue, transparent), linear-gradient(to top, red, transparent);
+    background-clip:content-box, padding-box ;
+}
