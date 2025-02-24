@@ -33,3 +33,10 @@ section{
     background-clip: padding-box;
     color: white;
 }
+.cores:nth-of-type(3){
+    background-color: hsl(30deg, 100%, 50%);
+    box-shadow: 0 15px 6px -7px hsl(100deg,100%,30%) inset;
+}
+.cores:nth-of-type(3):hover{
+    background-color: hsl(32deg, 68%, 44%);
+}
