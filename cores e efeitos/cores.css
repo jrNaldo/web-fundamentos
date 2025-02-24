@@ -83,3 +83,14 @@ section{
         radial-gradient(at top, blue, red),
         radial-gradient(at bottom, yellow, transparent);
 }
+.cores:nth-of-type(17){
+    background-image: conic-gradient(from 45deg, blue , red 50%, green, red);
+}
+.cores:nth-of-type(18){
+    background-image: conic-gradient(#f00,#ff0,#0f0,#0ff,#00f,#f0f, #f00);
+    transition: filter 1s linear;
+    aspect-ratio:1;
+}
+.cores:nth-of-type(18):hover{
+    filter:hue-rotate(360deg);
+}
