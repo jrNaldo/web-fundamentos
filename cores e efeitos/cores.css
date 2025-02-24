@@ -9,8 +9,10 @@ body {
 }
 
 .cores{
+    --teste:#f00;
+    background-color: color-mix(in srgb, var(--teste), transparent);
     width: 80%;
-    border: 8px dashed color-mix(in srgb, red 10%, blue 60%);
+    border: 8px dashed color-mix(in srgb, var(--primary-color), blue);
     margin: 20px auto;
     padding: 28px;
 }
