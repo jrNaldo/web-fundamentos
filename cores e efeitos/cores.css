@@ -28,3 +28,8 @@ section{
 .cores p{
     margin: 0;
 }
+.cores:nth-of-type(2){
+    background-color: rgb(244, 100, 100);
+    background-clip: padding-box;
+    color: white;
+}
