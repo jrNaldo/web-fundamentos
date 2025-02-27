@@ -45,9 +45,26 @@ body{
 }
 .post-it_borda::after{
     content: "";
-    background-color: black;
-    width: 1rem;
-    height: 1rem;
-    transform: translate(-3rem 30rem);
-    /* position: absolute; */
+    width: 2.8rem;
+    height: 2.8rem;
+    transform: translate(-2px, -10.5px) rotate(13.8deg);
+    position: absolute;
+    top: 0;
+    left: 3px;
+    background-image: linear-gradient(to top left,rgba(0, 0, 0, 0.548)48%, var(--cor-principal) 52%);
+}
+.post-it-borda_branca{
+    background-image: linear-gradient(to top left,  transparent 94%, var(--cor-principal)5%);
+    border-top-left-radius: 1.6rem;
+    position: relative;
+}
+.post-it-borda_branca::after{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    transform: translate(5px, -2px) rotate(13.8deg);
+    position: absolute;
+    top: 0;
+    left: 3px;
+    background-image: linear-gradient(to top left,rgb(150, 148, 148)48%, var(--cor-principal) 52%);
 }
