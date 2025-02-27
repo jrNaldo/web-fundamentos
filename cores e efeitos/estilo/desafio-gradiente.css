@@ -41,4 +41,13 @@ body{
 .post-it_borda{
     background-image: linear-gradient(to top left,  transparent 94%, var(--cor-principal)5%);
     border-top-left-radius: 1.6rem;
+    position: relative;
+}
+.post-it_borda::after{
+    content: "";
+    background-color: black;
+    width: 1rem;
+    height: 1rem;
+    transform: translate(-3rem 30rem);
+    /* position: absolute; */
 }
