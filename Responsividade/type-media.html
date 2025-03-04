@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Type</title>
+    <style>
+        body{
+            background-color: rgb(40, 40, 40);
+            color: white;
+            font-family: sans-serif;
+        }
+        a{
+            color: white;
+        }
+        @media print{
+            body{
+                color: lightblue;
+                background-color: lightslategrey;
+                font-family: serif;
+            }
+            a::after{
+                content: "("attr(href)") - (" attr(title) ")";
+                display: inline-block;
+                margin-left: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Types</h1>
+    <a href="https://serliv.com" title="Visite nosssa pagina">Serliv - Cursos Online</a> 
+</body>
+</html>
