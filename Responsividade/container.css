@@ -31,9 +31,12 @@ body{
     border-radius: .5em;
     display: inline-block;
 }
-@media screen and (min-width:50em) {
+.card_wrapper, main{
+    container-type: inline-size;
+}
+/* @media screen and (min-width:50em) { */
+@container (min-width:50em) {
     .card{
-        display: flex;
         flex-direction: row;
     }
     .card_header img{
@@ -46,8 +49,12 @@ body{
     gap: 1em;
     flex-direction: column;
 }
-@media  screen and (min-width:62.5em) {
+/* @media  screen and (min-width:62.5em) { */
+@container (min-width:62.5em) {
     .cards_container{
         flex-direction: row;
+    }
+    .card_wrapper{
+        flex-grow: 1;
     }
 }
