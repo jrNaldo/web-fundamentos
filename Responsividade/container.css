@@ -31,11 +31,19 @@ body{
     border-radius: .5em;
     display: inline-block;
 }
-.card_wrapper, main{
+/* .card_wrapper, main{
     container-type: inline-size;
+} */
+.card_wrapper{
+    /* container-name:cardWrapper ; */
+    container: cardWrapper / inline-size;
+}
+main{
+    /* container-name: ContainerName; */
+    container: ContainerName / inline-size;
 }
 /* @media screen and (min-width:50em) { */
-@container (min-width:50em) {
+@container cardWrapper (min-width:50em) {
     .card{
         flex-direction: row;
     }
@@ -50,7 +58,7 @@ body{
     flex-direction: column;
 }
 /* @media  screen and (min-width:62.5em) { */
-@container (min-width:62.5em) {
+@container ContainerName (min-width:62.5em) {
     .cards_container{
         flex-direction: row;
     }
