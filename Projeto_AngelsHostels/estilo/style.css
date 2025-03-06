@@ -11,6 +11,7 @@ body{
 }
 .maxWidth{
     max-width: 70.25em;
+    margin: auto;
 }
 .nav-content {
     margin-top: .8em;
@@ -68,7 +69,33 @@ a:hover {
     }
     
 }
+.icon-play{
+    display: none;
+}
 
+.action-btn{
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(49, 159, 159);
+    padding: .8em 2em;
+    border-radius: .5em;   
+    width: 4em;
+    margin: 1em auto 0;
+}
+.banner-title, .banner-secundary_title{
+    text-align: center;
+}
+.banner-title{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.banner-secundary_title{
+    font-size: 1em;
+    width: 90%;
+    margin: auto;
+    color: color-mix(in srgb, var(--primary-color) , white 30%);
+}
   /* Faz parte do HTML principal (main) - Esta parte abaixo
 .hero-banner{
     background-color: var(--primary-color);
@@ -91,18 +118,6 @@ a:hover {
     font-size: 1em;
     margin: 2em 2em .5em 2em;
     text-align: center;
-}
-.action-btn{
-    color: white;
-    text-decoration: none;
-    display: block;
-    background-color: rgb(49, 159, 159);
-    padding: .8em 2em;
-    border-radius: .5em;   
-    width: 4em;
-    margin: 1em auto 0;
-}
+}*/
 
-.icon-play{
-    display: none;
-} */
+
