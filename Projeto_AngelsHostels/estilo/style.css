@@ -3,11 +3,11 @@
     --primary-color: #612674;
     /* --default-gap: 1em; */
 }
-html{
-    font-family: sans-serif;
-}
 body{
     margin: 0;
+}
+h1, h2, h3, h4{
+    font-family: 'Oxygen', sans-serif;
 }
 .maxWidth{
     max-width: 70.25em;
@@ -42,6 +42,39 @@ li > a{
 a:hover {
     background-color: color-mix(in srgb, var(--primary-color), white 10%);
 }
+
+.icon-play{
+    display: none;
+}
+
+.action-btn{
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(49, 159, 159);
+    padding: .8em 2em;
+    border-radius: .5em;   
+    width: 4em;
+    margin: 1em auto 0;
+}
+.hero-banner{
+    background-color: #f6f6f6;
+}
+.banner-title, .banner-secundary_title{
+    text-align: center;
+}
+.banner-title{
+    color: var(--primary-color);
+    margin: 0;
+    padding: .5em;
+    font-size: 1.5em;
+}
+.banner-secundary_title{
+    font-size: 1em;
+    width: 90%;
+    margin: auto;
+    color: color-mix(in srgb, var(--primary-color) , white 50%);
+}
 @media screen and (min-width: 48.75em){
     .nav-content{
         flex-direction: row;
@@ -69,55 +102,32 @@ a:hover {
     }
     
 }
-.icon-play{
-    display: none;
+@media screen and (min-width:48.75em ) {
+    .hero-banner{
+        background-color: var(--primary-color);
+        padding-bottom: 1em;
+        box-sizing: border-box;
+    }
+    .icon-play{
+        width: 5em;
+        height: 5em;
+        padding-top: 1em;
+        display: block;
+        margin: auto;
+        padding-bottom: 1em;
+    }
+    .banner-title, .banner-secundary_title{
+        color: white;
+    }
+    .banner-title{
+        text-align: center;
+    }
+    .banner-secundary_title{
+        font-size: 1em;
+        margin: 1em 2em 1em 2em;
+        text-align: center;
+    }
 }
 
-.action-btn{
-    color: white;
-    text-decoration: none;
-    display: block;
-    background-color: rgb(49, 159, 159);
-    padding: .8em 2em;
-    border-radius: .5em;   
-    width: 4em;
-    margin: 1em auto 0;
-}
-.banner-title, .banner-secundary_title{
-    text-align: center;
-}
-.banner-title{
-    color: var(--primary-color);
-    font-weight: 500;
-}
-.banner-secundary_title{
-    font-size: 1em;
-    width: 90%;
-    margin: auto;
-    color: color-mix(in srgb, var(--primary-color) , white 30%);
-}
-  /* Faz parte do HTML principal (main) - Esta parte abaixo
-.hero-banner{
-    background-color: var(--primary-color);
-    padding-bottom: 1em;
-    box-sizing: border-box;
-}
-.icon-play{
-    width: 6em;
-    padding-top: 1em;
-    display: block;
-    margin: auto;
-}
-.banner-title, .banner-secundary_title{
-    color: white;
-}
-.banner-title{
-    text-align: center;
-}
-.banner-secundary_title{
-    font-size: 1em;
-    margin: 2em 2em .5em 2em;
-    text-align: center;
-}*/
 
 
