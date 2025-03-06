@@ -1,9 +1,16 @@
 @charset "UTF-8";
 :root{
     --primary-color: #612674;
+    /* --default-gap: 1em; */
+}
+html{
+    font-family: sans-serif;
 }
 body{
     margin: 0;
+}
+.maxWidth{
+    max-width: 70.25em;
 }
 .nav-content {
     margin-top: .8em;
@@ -11,10 +18,9 @@ body{
     flex-direction: column;
     
 }
-.nav-content img{
+.top_header_logo{
     height: 3em;
     object-fit: scale-down;
-
 }
 .list-content{
     list-style-type: none;
@@ -23,7 +29,7 @@ body{
     margin: 0;
     margin-top: .5em;
 }
-.list-content li{
+.list-content a{
     display: block;
     padding: 1em;
     text-align: center
@@ -32,8 +38,8 @@ li > a{
     text-decoration: none;
     color: white;
 }
-li:hover {
-    background-color: #893aa3;
+a:hover {
+    background-color: color-mix(in srgb, var(--primary-color), white 10%);
 }
 @media screen and (min-width: 48.75em){
     .nav-content{
@@ -41,7 +47,7 @@ li:hover {
         justify-content: space-between;
         margin-top: .3em;
     }
-    .nav-content img{
+    .top_header_logo{
         height: 4em;
         padding-left: .8em;
     }
@@ -54,21 +60,22 @@ li:hover {
     }
     li >a{
         color: var(--primary-color);
-        font-size: 1.3em;
+        font-size: 1em;
     }
-    li:hover {
-        background-color: #f8e2f8;
-        border-radius: .5em;
+    a:hover {
+        background-color: color-mix(in srgb, var(--primary-color), white 90%);
+        border-radius: 1em;
     }
     
 }
-  /* Faz parte do HTML principal (main) - Esta parte abaixo */
-/* .hero-banner{
+
+  /* Faz parte do HTML principal (main) - Esta parte abaixo
+.hero-banner{
     background-color: var(--primary-color);
     padding-bottom: 1em;
     box-sizing: border-box;
 }
-.hero-banner img{
+.icon-play{
     width: 6em;
     padding-top: 1em;
     display: block;
@@ -94,4 +101,8 @@ li:hover {
     border-radius: .5em;   
     width: 4em;
     margin: 1em auto 0;
+}
+
+.icon-play{
+    display: none;
 } */
