@@ -39,8 +39,9 @@ li > a{
     text-decoration: none;
     color: white;
 }
-a:hover {
+ li > a:hover {
     background-color: color-mix(in srgb, var(--primary-color), white 10%);
+    transition: background-color, .3s linear;
 }
 
 .icon-play{
@@ -56,6 +57,10 @@ a:hover {
     border-radius: .5em;   
     width: 4em;
     margin: 1em auto 0;
+}
+.action-btn:hover{
+    transition: background-color, .3s linear;
+    background-color: color-mix(in srgb, rgb(49,159,159), rgb(0, 0, 0) 20%);
 }
 .hero-banner{
     background-color: #f6f6f6;
@@ -76,6 +81,7 @@ a:hover {
     color: color-mix(in srgb, var(--primary-color) , white 50%);
     line-height: 2em;
 }
+/* MD */
 @media screen and (min-width: 48.75em){
     .nav-content{
         flex-direction: row;
@@ -97,9 +103,10 @@ a:hover {
         color: var(--primary-color);
         font-size: 1em;
     }
-    a:hover {
+    li > a:hover {
         background-color: color-mix(in srgb, var(--primary-color), white 90%);
         border-radius: 1em;
+        transition: all, .3s linear;
     }
     
 }
@@ -129,6 +136,7 @@ a:hover {
         text-align: center;
     }
 }
+/* LG */
 @media screen and (min-width:56.25em){
     .hero-banner{
         background-image: url(../imagem/bg_topo_1198x670.jpg);
@@ -163,3 +171,9 @@ a:hover {
     }
 }
 
+/* 
+min-width: 0        -> col-sm
+min-width: 48.75em  -> col-md
+min-width: 56.25em  -> col-lg
+min-width: 74em     -> col-xl 
+*/
