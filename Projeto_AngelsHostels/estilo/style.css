@@ -251,5 +251,18 @@ min-width: 74em     -> col-xl
 @container main-content (min-width: 500px){
     .main-content_container{
         display: flex;
+        gap: var(--default-gap);
     }
+    .main-content_title{
+        margin-top: 0;
+    }
+    .main-content_img img{
+        max-height:  11.375em;
+    }
+}
+.footer{
+    background-color: #25303e;
+    padding: 2em;
+    text-align: center;
+    color: rgb(178, 177, 177);
 }
