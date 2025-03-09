@@ -259,6 +259,12 @@ min-width: 74em     -> col-xl
     .main-content_img img{
         max-height:  11.375em;
     }
+    .main-content_img{
+        flex: 0 0 25%;
+    }
+    .main-content_text{
+        flex-grow:1 ;
+    }
 }
 .footer{
     background-color: #25303e;
