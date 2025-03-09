@@ -56,7 +56,7 @@ li > a{
     padding: .8em 2em;
     border-radius: .5em;   
     width: 4em;
-    margin: 1em auto 0;
+    margin: 2em auto 0;
 }
 .action-btn:hover{
     transition: background-color, .3s linear;
@@ -170,7 +170,28 @@ li > a{
         margin-top: 2em;
     }
 }
-
+.middle-content{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 2em;
+}
+.middle-content a{
+    color: inherit;
+    text-decoration: none;
+}
+.middle-content_title{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 1.25em;
+}
+.middle-content span[class^="icon-"]{
+    color: var(--primary-color);
+    font-size: 3em;
+   
+}
+.middle-content p{
+    line-height: 1.5;
+}
 /* 
 min-width: 0        -> col-sm
 min-width: 48.75em  -> col-md
