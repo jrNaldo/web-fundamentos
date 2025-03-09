@@ -248,8 +248,8 @@ min-width: 74em     -> col-xl
     container-type: inline-size;
     container-name: main-content;
 }
-@container main-content (min-width:42.5em){
-    .main-content_img img{
-        width: 30%;
+@container main-content (min-width: 500px){
+    .main-content_container{
+        display: flex;
     }
 }
