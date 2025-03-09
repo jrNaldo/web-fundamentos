@@ -220,4 +220,36 @@ min-width: 74em     -> col-xl
     .col-xl-3{
         width: calc(25% - var(--default-gap));
     }
+    .col-xl-6{
+        width: calc(50% - var(--default-gap));
+    }
+}
+
+.main-content{
+    padding: 2em;
+}
+.main-content p{
+    line-height: 1.2;
+}
+.main-content_title{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: normal;
+    letter-spacing: .1em;
+    font-size: 1.25em;
+}
+.main-content .row{
+    row-gap: 4em;
+}
+.main-content_img img{
+    width: 100%;
+}
+.main-content_article{
+    container-type: inline-size;
+    container-name: main-content;
+}
+@container main-content (min-width:42.5em){
+    .main-content_img img{
+        width: 30%;
+    }
 }
