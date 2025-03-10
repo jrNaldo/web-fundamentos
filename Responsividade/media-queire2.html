@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querie</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: linear-gradient(rgb(81, 0, 255), rgb(98,0,255));
+            min-height: 100dvh;
+            font-family: sans-serif;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1{
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width:26.875em) {
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+        @media (width > 26.875em) {
+            h1{
+                color: yellow;
+            }
+        }
+        @media screen and (max-width:37.5em) {
+            h1{
+                color: rgb(119, 1, 1);
+            }
+        }
+        @media (width <= 37.5em){
+            h1{
+                color: white;
+            }
+        }
+        @media (27em < width <= 37.5em){
+            h1{
+                color: black;
+            }
+            body{
+                background-image: none;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Testando novas maneiras de escrever Media Queries</h1>
+    </section>
+</body>
+</html>
