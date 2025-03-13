@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+        <img src="rwd-imagens/1280.jpg" alt="texto alternativo"         
+        srcset="rwd-imagens/960.jpg 960w, rwd-imagens/640.jpg 640w,rwd-imagens/480.jpg 480w"    
+        sizes="(min-width:900px) 33vw, (min-width:600px) 50vw, 100vw">
+
+        <hr>
+
+        <picture>
+            <source media="(min-width:900px)" srcset="rwd-imagens/1280.jpg 1280w, rwd-imagens/640.jpg 640w" sizes="33vw">
+
+            <source media="(min-width:600px)"srcset="rwd-imagens/1280.jpg 1280w, rwd-imagens/640.jpg 640w" sizes="50vw">
+            <img src="rwd-imagens/1280.jpg" alt="">
+        </picture>
+ 
+</body>
+</html>
