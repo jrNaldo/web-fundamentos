@@ -21,28 +21,29 @@
         /* GRID */
         .gridContainer{
             display: grid;
-            grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr[col2-end col3-start]  1fr[col3-end];
+            /* grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr[col2-end col3-start]  1fr[col3-end]; */
+            grid-template-columns: repeat(3,[col-start] 1fr [col-end]);
             grid-template-rows: [header-start] 75px [header-end nav-start] 50px [nav-end main-start] 1fr [main-end footer-start] 50px [footer-end];
             gap: .8em; 
         }
         .header{
-            grid-column: col1-start/col3-end;
+            grid-column: col-start 1/col-end 3;
             grid-row: header-start/header-end;
         }
         .nav{
-            grid-column:  col1-start/col2-end;
+            grid-column:  col-start 1/col-end 2;
         }
         .aside{
             grid-row: nav-start/footer-end;
-            grid-column: col3;
+            grid-column: col-start 3;
             
         }
         .main{
-            grid-column: col1-start/col2-end;
+            grid-column: col-start 1/col-end 2;
             grid-row: main;
         }
         .footer{
-            grid-column: col1-start/ col3-end;
+            grid-column: col-start 1/ col-end 3;
             grid-row: footer;
             background-color: rgb(0 0 0 / .5);
             z-index: 1;
