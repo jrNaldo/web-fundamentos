@@ -21,13 +21,20 @@
         /* GRID */
         .gridContainer{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 75px 50px 1fr 50px;
             grid-template-areas: 
             "header header header"
             "nav nav aside"
             "main main aside"
-            "footer footer .";
+            "footer footer ."; */
+            grid-template: 
+            "header header header" 75px
+            "nav nav aside" 50px
+            "main main aside" 1fr
+            "footer footer footer"50px
+            / 1fr 1fr 1fr;
+
             gap: .8em;
             
         }
