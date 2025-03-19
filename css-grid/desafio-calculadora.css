@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body{
+
+    background-color: rgb(175, 114, 232);
+
+}
+.gridContainer{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+    transform: translateY(30%);
+    box-sizing: border-box;
+    background-color: rgb(70, 85, 119);
+    color: white;
+    width: fit-content;
+    border-radius: .5em;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: 50px 50px 50px 50px 50px 50px ;
+}
+.gridItem{
+    background-image: linear-gradient(rgb(80, 76, 76) , #222);
+    text-align: center;
+    border-radius: .3em;
+    border-top: 1px solid white;
+}
+.btn-adicao{
+    grid-column: 4;
+    grid-row: 5/span 2;
+}
+.btn-number0{
+    grid-column: span 2;
+}
+.result{
+    grid-column: 1/-1;
+    font-size: 1.5em;
+}
+.result p{
+    text-align: right;
+    transform: translateY(-14px);
+    margin-right: 5px;
+}
