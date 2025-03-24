@@ -23,6 +23,9 @@ img{
     background-color: white;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
 }
 .topNav{
     grid-row: 1/2;
@@ -76,6 +79,9 @@ main > figure{
     padding-top: var(--default-padding);
 
 }
+.menus li{
+    margin-top: 1rem;
+}
 .menu:last-child{
     padding-bottom: var(--default-padding);
 }
@@ -116,17 +122,36 @@ main > figure{
     color: color-mix(in srgb, transparent, var(--color-text) 60%);
 }
 .summary{
+    display: flex;
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    padding: 1rem;
+    justify-content: space-between;
+    padding:calc(var(--default-padding) / 2) var(--default-padding);
+    align-items: center;
+    border-radius: 4px;
 }
-.summary > *:not(:last-child){
-    border-right: 2px solid black;
+.summary .number{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: calc(var(--default-padding)/2);
 }
-.summary a{
-    text-align: right;
-    padding-right: var(--default-padding);
-    display: inline-block;
+.summary article{
+    padding: calc(var(--default-padding)/2) 0;
+}
+.separated{
+    width: 2px;
+    background-color: var(--bg-color);
+    align-self: stretch;
+}
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: calc(var(--default-padding)/4) calc(var(--default-padding) - .3rem);
+}
+.summary .btn{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
 }
