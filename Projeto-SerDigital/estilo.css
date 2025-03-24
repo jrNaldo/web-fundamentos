@@ -21,6 +21,8 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: right;
+    /* TODO:fUNCIONAR COM HAMBURGUER MENU */
+    display: none;
 }
 
 .header-menu a {
@@ -80,6 +82,9 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1em;
+    display: flex; 
+    gap: 1rem;
+    justify-content: space-around;
 }
 
 .hide {
