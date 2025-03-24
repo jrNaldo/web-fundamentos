@@ -147,3 +147,34 @@ img {
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+}
+.row > .sm-12{
+    grid-column: 1/-1;
+}
+@media screen and (min-width:46.25em) {
+    .row > .md-3{
+        grid-column: span 3;
+    }
+    .row > .md-6{
+        grid-column: span 6;
+    }
+    .row > .md-9{
+        grid-column: span 9;
+    }
+}
+@media screen and (min-width:90em) {
+    .row > .lg-3{
+        grid-column: span 3;
+    }
+    .row > .lg-4{
+        grid-column: span 4;
+    }
+    .row > .lg-6{
+        grid-column: span 6;
+    }
+}
