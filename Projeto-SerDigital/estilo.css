@@ -14,11 +14,13 @@ body {
 }
 
 .content-wrapper-center {
-    padding: 1rem;
+    padding: 3rem 1rem 2rem;
     max-width: 67.25rem;
     margin: auto;
 }
-
+.hero_title{
+    margin-top: 0;
+}
 .header-menu {
     list-style-type: none;
     padding: 0;
@@ -71,7 +73,9 @@ img {
     max-width: 100%;
 }
 
-
+.imagem{
+    text-align: center;
+}
 .brands h2 {
     font-size: 1rem;
     font-weight: lighter;
@@ -103,8 +107,15 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1rem;
+    
 }
-
+.testemunhos{
+    container: testemunhoContainer / inline-size;
+}
+.testemunho_thumb{
+    width: 8.125rem;
+    height: 8.125rem;
+}
 .contato {
     background-color: var(--gray);
     border-radius: 5px;
@@ -153,13 +164,71 @@ img {
 .row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3rem;
+    gap: .5rem;
     grid-auto-flow:dense ;
+}
+.row.testemunhos_wrapper{
+    row-gap: 1.5rem;
+}
+.row.contato{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.contato-title{
+    margin-top: 0;
 }
 .row > .sm-12{
     grid-column: 1/-1;
 }
+
+@container testemunhoContainer (min-width:46.25em){
+    .testemunho{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@container testemunhoContainer (min-width:90em){
+    .testemunho{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media screen and (min-width:46.25em) {
+    
+    .contato_image{
+        display: block;
+        text-align: center;
+    }
+    body{
+        text-align: left;
+    }
+    h1 {
+        font-size: 3.625rem;
+    }
+    
+    h2 {
+        font-size: 2.875rem;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-menu{
+        display: block;
+        margin: 0;
+    }
+    .header-menu a{
+        padding: 1rem;
+    }
+    .header-menu li{
+        display: inline-block;
+        margin-left: 2rem;
+    }
+    .row{
+        gap: 1rem;
+    }
     .row > .md-3{
         grid-column: span 3;
     }
@@ -175,8 +244,17 @@ img {
     .row > .md-1-6{
         grid-column: 1/6;
     }
+    .footer{
+        padding: 0;
+    }
 }
 @media screen and (min-width:90em) {
+    .hero_title{
+        margin-bottom: 6.25rem;
+    }
+    .row{
+        gap: 3rem;
+    }
     .row > .lg-3{
         grid-column: span 3;
     }
@@ -194,6 +272,9 @@ img {
     }
     .row> .lg-1-5{
         grid-column: 1/5;
+    }
+    .row>.lg-1-7{
+        grid-column: 1/8;
     }
     .row > .lg-8-12{
         grid-column: 8/13;
