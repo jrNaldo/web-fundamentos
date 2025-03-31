@@ -27,13 +27,14 @@ body {
     padding: 0;
     text-align: right;
     /* TODO:fUNCIONAR COM HAMBURGUER MENU */
-    display: none;
+    
 }
-
+.header-menu li{
+    padding: .25em 0;
+}
 .header-menu a {
     display: block;
-    padding: 2em 0;
-
+    padding: 1.75em 0;
 }
 
 a {
@@ -55,7 +56,12 @@ h2 {
 .header {
     text-align: left;
 }
+.header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
+}
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -190,6 +196,13 @@ img {
     align-items: center;
     text-align: center;
 }
+.icons li{
+    display: inline-block;
+    font-size: 2rem;
+}
+.icons li + li{
+    margin-left: 1rem;
+}
 @container testemunhoContainer (min-width:42.1875em){
     .testemunho_card{
         flex-direction: row;
@@ -214,17 +227,21 @@ img {
         font-size: 2.875rem;
     }
     .header{
-        display: flex;
-        justify-content: space-between;
         align-items: center;
     }
     .header-menu{
-        display: block;
+        position: static;
         margin: 0;
+        max-height: initial;
+        background-color: initial;
     }
     .header-menu a{
         padding: 1rem;
     }
+    .menu-icon, .menu-btn{
+        display: none;
+    }
+
     .header-menu li{
         display: inline-block;
         margin-left: 2rem;
@@ -282,4 +299,75 @@ img {
     .row > .lg-8-12{
         grid-column: 8/13;
     }
+}
+/* Hamburguer Menu */
+.header-menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    transition: max-height position .3s linear;
+    overflow: hidden;
+    max-height:0;
+    background-color: rgb(255, 255, 255);
+    padding-right: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-btn:focus-visible +.menu-icon {
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+.menu-btn+.menu-icon .nav-icon{
+    transition: transform .3s ease-in;
+}
+.menu-btn:checked ~ .header-menu{
+    max-height: 100vh;
+}
+
+.menu-btn:checked+.menu-icon .nav-icon{
+    background-color: transparent;
+}
+.menu-btn:checked+.menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+}
+.menu-btn:checked+.menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+}
+.header-menu:focus-within{
+    max-height: 100vh;
+}
+.menu-icon{
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    height: 24px;transform: translateY(-5px);
+}
+.nav-icon{
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    align-items: center;
+    margin: 0;
+}
+.nav-icon::after , .nav-icon::before{
+    content: "";
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    margin: 0;
+}
+.nav-icon::after{
+    transform: translateY(6px);
+    transition: transform .3s ease-in;
+}
+.nav-icon::before{
+    transition: transform .3s ease-in;
+    transform: translateY(-6px);
 }
