@@ -11,6 +11,7 @@ body {
     color: var(--dark);
     text-align: center;
     margin: 0;
+    background-image: radial-gradient(circle at left top, rgb(142 173 213 /.3), transparent 400px),radial-gradient(circle at right center, rgb(142 173 213 /.3), transparent 400px);
 }
 
 .content-wrapper-center {
@@ -76,10 +77,14 @@ img {
 .imagem{
     text-align: center;
 }
+.brands{
+    text-align: center;
+}
 .brands h2 {
     font-size: 1rem;
     font-weight: lighter;
     color: #667085;
+
 }
 
 .brands ul {
@@ -107,11 +112,9 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1rem;
-    
-}
-.testemunhos{
     container: testemunhoContainer / inline-size;
 }
+
 .testemunho_thumb{
     width: 8.125rem;
     height: 8.125rem;
@@ -180,20 +183,20 @@ img {
 .row > .sm-12{
     grid-column: 1/-1;
 }
+.testemunho_card{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@container testemunhoContainer (min-width:42.1875em){
+    .testemunho_card{
+        flex-direction: row;
+        text-align: left;
+    }
+}
 
-@container testemunhoContainer (min-width:46.25em){
-    .testemunho{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-}
-@container testemunhoContainer (min-width:90em){
-    .testemunho{
-        flex-direction: column;
-        align-items: center;
-    }
-}
 @media screen and (min-width:46.25em) {
     
     .contato_image{
