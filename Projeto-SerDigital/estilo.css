@@ -158,6 +158,8 @@ img {
 }
 
 .copyright {
+    padding-left: 0;
+    padding-right: 0;
     white-space: nowrap;
 }
 
