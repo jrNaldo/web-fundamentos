@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        @keyframes anda{
+            from{
+                transform: translateX(0);
+                background-color: yellow;
+            }  
+            50%{
+                background-color: green;
+            }
+            to{
+                transform: translateX(300px);
+                background-color: red;
+            }
+        }
+        #anima{
+            width: 400px ;
+            background-color: orangered;
+            
+        }
+        #anima div{
+            width: 100px;
+            height: 50px ;
+            background-color: #ccc;
+            border: 2px solid white;
+            margin-bottom: 10px;
+        }
+        #anima div:nth-child(1){
+            animation-name:anda ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+        #anima div:nth-child(2){
+            animation: anda 2s linear 2s 3 alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+        #anima div:nth-child(2):hover{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div id="anima">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
