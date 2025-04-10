@@ -1,0 +1,92 @@
+html{
+   min-height: 100%;
+}
+body {
+   background-image: linear-gradient(to  right, rgb(223, 226, 153), rgb(241, 241, 25));
+   font-family: 'Montserrat', sans-serif;
+}
+h1{
+   font-size: 4em;
+}
+strong{
+   color: red;
+}
+section p{
+   font-weight: 300;
+}
+input{
+   padding: .6em;
+   border-radius: .5em;
+   background-color: transparent;
+   color: black;
+   margin-top: .6em;
+}
+input[type="submit"]{
+   background-color: rgb(16, 16, 78);
+   color: white;
+   border: 0;
+   padding: 0.75em 1em;
+   margin-left: 1em;
+   cursor: pointer;
+}
+.upper{
+   text-transform: uppercase;
+}
+
+#wrapper{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+   margin-top: 30px;
+}
+.content{
+   margin: auto;
+   width: 90%;
+}
+main{
+   margin-top: 50px ;
+}
+.animation{
+   position: relative;
+   transform: translateY(80px);
+}
+.animation img{
+   position: absolute;
+}
+.hearth-emoji{
+   width: 475px;
+   animation: anda-1 3s infinite 1s alternate;
+}
+.smile-emoji{
+   transform: translate(-68px, 170px);
+   animation: anda-2 1s infinite alternate;
+}
+.espantado-emoji{
+   transform: translate(260px, 280px);
+}
+.lingua-emoji{
+   transform: translate(40px, -100px);
+}
+.riso-emoji{
+   transform: translate(40px, 320px);
+}
+.vergonha-emoji{
+   transform: translate(300px, 10px);
+   animation: anda-3 5s infinite alternate;
+}
+@keyframes anda-1{
+   0%{
+      transform: translate(unset);
+   }
+   100%{
+      transform: translate(20px, 20px);
+   }
+}
+@keyframes anda-2{
+   0%{
+      transform: translate(unset);
+   }
+   100%{
+      transform: translate(00px, 12px);
+   }
+}
