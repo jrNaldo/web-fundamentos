@@ -6,12 +6,23 @@
     <title>Imagem andando</title>
     <style>
         .cat{
-            background-color: #ccc;
+
             background-image: url(walking-image/walking_sprite.png);
             background-repeat: no-repeat;
             width: 400px;
             height: 200px;
             background-position: 0 0;
+            animation: walking 1s steps(12) infinite;
+            will-change: background-position;
+            transform: scaleX(-1);
+        }
+        @keyframes walking {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: 0 -2390px;
+            }
         }
     </style>
 </head>
