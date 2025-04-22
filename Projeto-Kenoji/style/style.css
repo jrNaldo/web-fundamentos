@@ -67,11 +67,11 @@ h1 strong{
 }
 .espantado-emoji{
    transform: translate(260px, 280px);
-   animation: anda 3s infinite 1s alternate;
+   animation: anda 3s infinite 0s alternate;
 }
 .lingua-emoji{
    transform: translate(40px, -100px);
-   animation: anda 3s infinite 1s alternate;
+   animation: anda 3s infinite .5s alternate;
 }
 .riso-emoji{
    transform: translate(40px, 320px);
@@ -79,7 +79,7 @@ h1 strong{
 }
 .vergonha-emoji{
    transform: translate(300px, 10px);
-   animation: anda 6s infinite 1s alternate;
+   animation: anda 4s infinite 2s alternate;
 }
 @keyframes anda{
    0%{
