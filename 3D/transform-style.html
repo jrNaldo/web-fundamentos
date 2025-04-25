@@ -21,14 +21,30 @@
             perspective: 500px;
         }
         .cena1a{
-            transform: rotateY(92deg);
+            transform: translateX(100px) rotateY(92deg);
             transform-style: preserve-3d;
         }
         .cena1b{
             transform: rotateX(90deg);
         }
         .cena1c{
-            transform:translateY(-200px) rotateX(45deg) ;
+            transform:translateY(-200px) rotateX(-45deg) ;
+        }
+        .cena{
+            perspective: 500px;
+        }
+        .cena1{
+            background-color: #000000;
+            width: 200px;
+            z-index: 1;
+            aspect-ratio: 1;
+            transform: translateY(100px) rotateY(-20deg);
+        }
+        .cena2{
+            background-color: #ccc;
+            width: 200px;
+            aspect-ratio: 1;
+            transform: translate(100px, -200px) rotateY(-20deg);
         }
     </style>
 </head>
@@ -38,6 +54,10 @@
             <div class="cena1b plano">cena 1 B</div>
             <div class="cena1c plano">cena 1 B</div>
         </div>
+    </div>
+    <div class="cena">
+        <div class="cena1"></div>
+        <div class="cena2"></div>
     </div>
 </body>
 </html>
