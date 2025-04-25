@@ -20,10 +20,12 @@
             width: 100%;
             height: 100%;
             transform-style: preserve-3d;
-            transition: 1s transform;
+            transition: 1s transform; 
+            position: relative;
+            transform-origin: right center;
         }
         .cena:hover .card{
-            transform: rotateY(180deg);
+            transform: translateX(-100%) rotateY(-180deg);
         }
         .card_face{
             position: absolute;
@@ -32,6 +34,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
             color: white;
         }
         .card_face-front{
