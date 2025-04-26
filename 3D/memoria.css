@@ -1,4 +1,65 @@
 @charset "UTF-8";
+html{
+    min-height: 100vh;
+}
 body{
     background-image: linear-gradient(to top, blue, violet);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    max-width: fit-content;
+    margin: auto;
+}
+.title-form{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: rgb(168, 120, 120);
+    padding: .8em;
+}
+.main-form{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.front-image{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    grid-column: 1/2;
+}
+.back-image{
+    position: absolute;
+    backface-visibility: hidden;
+    grid-column: 1/2;
+}
+.front-image img , .back-image img{
+    max-width: 100%;
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: .5em;
+    border: 2px solid orangered;
+}
+.card-position{
+    position: relative;
+    transform-style:preserve-3d ;
+    transition: 1s transform; 
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked + .card-position{
+    transform: rotateY(180deg) ;
+    
 }
