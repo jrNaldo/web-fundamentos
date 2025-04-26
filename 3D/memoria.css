@@ -46,8 +46,8 @@ form{
 }
 .front-image img , .back-image img{
     max-width: 100%;
-    width: 80px;
-    aspect-ratio: 1;
+    width: 120px;
+    height: 80px;
     border-radius: .5em;
     border: 2px solid orangered;
 }
