@@ -35,11 +35,13 @@ form{
 }
 
 .front-image{
+    object-fit: cover;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     grid-column: 1/2;
 }
 .back-image{
+    object-fit: cover;
     position: absolute;
     backface-visibility: hidden;
     grid-column: 1/2;
