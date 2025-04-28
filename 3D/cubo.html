@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo 3D</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+        }
+        .cena{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #ccc;
+            perspective: 600px;
+        }
+        .cubo{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+        .face{
+            position: absolute;
+            background-color: rgb(0 0 0 / .2);
+            width: 100%;
+            height: 100%;
+            outline: 3px solid black;
+            color: white;
+            font-size: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* .cubo{
+            transform: rotateY(25deg) rotateX(25deg);
+        } */
+        
+        .face-1{
+            transform: rotateY(0deg);
+        }
+        .face-2{
+            transform:rotateY(90deg) translateX(150px) translateZ(150px) ;
+        }
+        .face-3{
+            transform: translateX(-150px) translateZ(-150px) rotateY(90deg);
+        }
+        .face-4{
+            transform: translateZ(-300px);
+        }
+        .face-5{
+            transform: translateY(-150px) translateZ(-150px) rotateX(90deg);
+        }
+        .face-6{
+            transform: translateY(150px) translateZ(-150px) rotateX(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cena">
+        <div class="cubo">
+            <div class="face face-1">1</div>
+            <div class="face face-2">2</div>
+            <div class="face face-3">3</div>
+            <div class="face face-4">4</div>
+            <div class="face face-5">5</div>
+            <div class="face face-6">6</div>
+        </div>
+    </div>
+</body>
+</html>
