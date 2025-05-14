@@ -11,7 +11,7 @@
         let n1 = parseFloat(prompt('Digite um numero: '))
         let n2 = parseFloat(prompt('Digite outro numero: '))
 
-        if(n1 <=10 && n2 <= 10){
+        if(n1 <=10 && n2 <= 10 && n1 >=0 && n2 >= 0){
             let media = (n1 + n2)/2
             if(media > 4 && n1 > 0 && n2 > 0){
                 alert('Aprovado')
@@ -19,7 +19,7 @@
                 alert('Reprovado')
             }
         }else{
-            alert('Digite APENAS numeros menores do que 10')
+            alert('Digite APENAS numeros entre 0 e 10')
         }
         
         // if(n1 > 10 || n2 >10){

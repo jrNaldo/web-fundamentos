@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+    <script>
+        let n1 = parseFloat(prompt('Digite nota 1: '))
+        let n2 = parseFloat(prompt('Digite nota 2: '))
+        if(isNaN(n1) || isNaN(n2)){
+            alert('Digite apenas números')
+        }else if( n1 < 0 || n2 < 0 || n1 > 10 || n2 > 10){
+            alert("Digite apenas numeros entre 0 e 10")
+        }else{
+            let m = (n1 + n2)/2
+            if(m > 4 && n1 > 0 && n2 > 0){
+                alert("Aprovado!!")
+            }
+            else{
+                alert("Reprovado!!")
+            }
+        }
+
+    </script>
+</body>
+</html>
