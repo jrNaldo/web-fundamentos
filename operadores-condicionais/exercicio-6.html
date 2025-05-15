@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myVar = 10
+        switch(typeof myVar){
+            case "number":
+                alert('myVar é numero')
+                break
+            case "boolean":
+                alert('myVar é boolean')
+                break
+            case "string":
+                alert('myVar é texto')
+                break
+            case "undefined":
+                alert('myVar é indefinida')
+                break
+            case "object":
+                alert("myVar é nula")
+                break
+            default:
+                alert('Nao foi possivel indentificar qual é esse tipo de variavel')
+        }
+    </script>
+</body>
+</html>
