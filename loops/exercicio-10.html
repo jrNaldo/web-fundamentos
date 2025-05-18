@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Anos bissextos</h1>
+    <p>São bissextos todos os anos múltiplos de 400, exceto se for múltiplo de 100, mas não de 400, por exemplo: 1996, 2000, 2004, 2008, 2012, 2016, 2020; - Não são bissextos os anos múltiplos de 100. De acordo com o cálculo, os próximos anos bissextos divisíveis por 4 serão: 2024, 2028, 2032, 2036, 2040, 2048, 2052.</p>
+    <script>
+        for(let i = 0; i <= 2025; i++){
+                if( (i % 4 === 0 && i % 100 !== 0 )|| i % 400 === 0){
+                    document.write(i+"<br>")
+                }
+        }
+    </script>
+</body>
+</html>

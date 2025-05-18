@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Consulta de dados</h1>
+    <script>
+        let dadoJog = 1
+        let par = 0
+        while(par < 10){
+            let dado1 = parseInt(Math.random()*6+1)
+            let dado2 = parseInt(Math.random()*6+1)
+
+            console.log(dado1, dado2, dadoJog, par)
+            if( dado1 === dado2){
+                continue
+            }
+            
+            dadoJog++
+            if((dado1 + dado2)% 2 === 0){
+                par++
+            }
+            if(par >= 10){
+                break
+            }
+            
+        }
+        document.write('Os dados foram jogados '+ dadoJog + " vezes")
+    </script>
+</body>
+</html>

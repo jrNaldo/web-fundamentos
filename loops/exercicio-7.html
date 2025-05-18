@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>break e continue</h1>
+    <script>
+        for(let i = 1; i < 10; i++){
+            console.log(i)
+            if(i === 5){
+                break
+            }
+        }
+        console.log('Fim do looping com break')
+
+        for(let i = 1; i < 10; i++){
+            if(i === 5){
+                continue
+            }
+            console.log(i)
+        }
+        console.log('Fim do looping com continue')
+    </script>
+</body>
+</html>
