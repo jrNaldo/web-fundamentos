@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop Dados</h1>
+    <script>
+        let dado1 = parseInt(Math.random() * 6 + 1)
+        let dado2 = parseInt(Math.random() * 6 + 1)
+
+        let i = 0
+
+        while(dado1 != dado2){
+            console.log(dado1,dado2)
+            i++
+            dado1 = parseInt(Math.random() * 6 + 1)
+            dado2 = parseInt(Math.random() * 6 + 1)
+        }
+        document.write(' Os dados foram jogados ' + i + ' vezes. E o numero repetido foi o '+ dado1)
+        console.log('----------------')
+        dado1 = parseInt(Math.random() * 6 + 1)
+        dado2 = parseInt(Math.random() * 6 + 1)
+        i = 1
+        do{
+            console.log(dado1,dado2)
+            i++
+            dado1 = parseInt(Math.random() * 6 + 1)
+            dado2 = parseInt(Math.random() * 6 + 1)
+        }while(dado1 != dado2)
+        document.write(' Os dados foram jogados ' + i + ' vezes. E o numero repetido foi o '+ dado1)
+    </script>
+</body>
+</html>
