@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nomes = ['joao', 'Maria', 'Beatriz','Carlos','Naldo','Bruna', 'Shophia','Carlos','Ricardo','Lucy']
+        let nome = prompt('Digite seu nome: ')
+        nomes[nomes.length] = nome
+        for(let i = 0; i < nomes.length; i++){
+            document.write('Nome: '+nomes[i]+"<br>")
+        }
+        document.write('A lista de nomes possui '+ nomes.length+' elementos!!')
+        
+    </script>
+</body>
+</html>
