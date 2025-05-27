@@ -18,6 +18,9 @@
             endereco: endereco
         }
         document.write(`${pessoa.nome}${pessoa.sobrenome} de endereço ${pessoa.endereco.rua} ${pessoa.endereco.numero}`)
+        for(let prop in pessoa){
+            console.log(prop)
+        }
     </script>
 </body>
 </html>
