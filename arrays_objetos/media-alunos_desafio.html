@@ -35,6 +35,16 @@
         const listaAlunos = document.getElementById("listaAlunos")
         let alunosHtml = ""
         
+        for(let i = 0; i < alunos.length; i++){
+            alunosHtml += `<li> ${alunos[i].nome} media: `
+            let soma = 0
+            for(let j = 0; j < alunos[i].notas.length; j++){
+                soma += alunos[i].notas[j]
+            }
+            let media = soma/alunos[i].notas.length
+            alunosHtml += `${media} </li>`
+        }
+
         listaAlunos.innerHTML = alunosHtml
     </script>
 </body>
