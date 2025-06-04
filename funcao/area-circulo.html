@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area da circuferência</title>
+</head>
+<body>
+    <h1>Area da circuferência</h1>
+    <label>Raio: <input type="number" id="raio"></label>
+    <button onclick="mostrarCircuferencia()"> Mostrar Circuferencia</button>
+    <button onclick="mostrarCircuferenciadoPrompt()" style="margin-bottom: 10px;">Mostrar Circuferencia do Prompt</button><br>
+    <output id="output"></output>
+    <script>
+        const raio = document.getElementById("raio")
+        const output = document.getElementById("output")
+        function mostrarCircuferenciadoPrompt(){
+            let raioValue = parseFloat(prompt("Digite o valor do raio: ")) 
+            mostrarArea(raioValue)
+        }
+        function mostrarCircuferencia(){
+            let raioValue = parseFloat(raio.value) 
+            mostrarArea(raioValue)
+            
+        }
+        function mostrarArea(raio){
+            const pi = Math.PI
+            let areaCirculo = pi * raio**2
+
+            output.innerHTML = `A circuferência do triangulo de raio ${raio} é de ${areaCirculo}`
+        }
+    </script>
+</body>
+</html>

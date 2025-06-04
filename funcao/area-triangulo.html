@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input, button{
+            margin: .5em;
+        }
+    </style>
 </head>
 <body>
     <h1>Area do triângulo</h1>
-    
+    <label>Base(cm): <input type="number" id="base" value="" ></label><br>
+    <label>Altura(cm): <input type="number" id="altura" value=""></label><br>
+    <button onclick="mostrarArea()">Calcular area</button><br>
+    <output id="output"></output>
+    <script>
+        const base = document.getElementById("base")
+        const altura = document.getElementById("altura")
+        const output = document.getElementById("output")
+        function mostrarArea(){
+            let baseValue = base.value 
+            let alturaValue = altura.value
+
+            let area = (baseValue * alturaValue) / 2
+
+            output.innerHTML = `A area do triangulo de base ${baseValue} e de altura ${alturaValue} é ${area}cm²`
+        }
+    </script>
 </body>
 </html>
