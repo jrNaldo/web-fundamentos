@@ -12,21 +12,30 @@
 </head>
 <body>
     <h1>Area do triângulo</h1>
-    <label>Base(cm): <input type="number" id="base" value="" ></label><br>
-    <label>Altura(cm): <input type="number" id="altura" value=""></label><br>
-    <button onclick="mostrarArea()">Calcular area</button><br>
-    <output id="output"></output>
+    <label>Base(cm): 
+        <input type="number" id="base">
+    </label>
+    <br>
+    <label>Altura(cm): 
+        <input type="number"id="altura">
+    </label>
+    <br>
+    <button onclick="mostrarArea()">Mostrar Area</button><br>
+    <output id="output">
+
+    </output>
+
     <script>
         const base = document.getElementById("base")
         const altura = document.getElementById("altura")
         const output = document.getElementById("output")
+        let areaTriangulo = ""
         function mostrarArea(){
-            let baseValue = base.value 
+            let baseValue = base.value
             let alturaValue = altura.value
-
             let area = (baseValue * alturaValue) / 2
-
-            output.innerHTML = `A area do triangulo de base ${baseValue} e de altura ${alturaValue} é ${area}cm²`
+            areaTriangulo = `A area de um triangulo de base de ${baseValue}cm e de altura de ${alturaValue}cm é ${area}cm²`
+            output.innerHTML = areaTriangulo
         }
     </script>
 </body>
