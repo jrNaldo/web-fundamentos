@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular</title>
+</head>
+<body>
+    <script>
+        function calcular(n1,n2,simbolo){
+            switch(simbolo){
+                case "+":
+                    return n1 + n2
+                case "-":
+                    return n1 - n2
+                case "*":
+                    return n1 * n2
+                case "/":
+                    return n1 / n2
+                default:
+                    return null
+            }
+        }
+        console.log(calcular(2,4,"+"))
+        console.log(calcular(21,4,"-"))
+        console.log(calcular(21,4,"*"))
+        console.log(calcular(2,4,"/"))
+        console.log(calcular(2,4,"0iiii"))
+    </script>
+</body>
+</html>
