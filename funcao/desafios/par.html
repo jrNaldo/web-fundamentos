@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Função PAR</title>
 </head>
 <body>
-    
+    <script>
+        function par(n){
+            if(n%2===0){
+                return true
+            }else{
+                return false
+            }
+        }
+        console.log("É par? "+par(5))
+
+        //                      OU
+
+        function ehpar(n){
+            return n % 2 === 0
+        }
+        console.log("É par? "+ehpar(4))//true
+        console.log("É par? "+ehpar(65))//false
+    </script>
 </body>
 </html>
