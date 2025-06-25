@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try   -   Catch(error)</title>
+</head>
+<body>
+    <h1>try ... catch(error)</h1>
+    <div id="output"></div>
+    <script>
+        let obj = {nome: "Daniel", email: "daniel@exemplo.com"}
+
+        obj = null 
+
+        try{
+            document.getElementById("output").innerHTML = `Nome: ${obj.nome} - Email: ${obj.email}`
+        }catch(e){
+            alert("Ocorreu um erro "+ e.message)
+        }finally{
+            alert("Fim do programa")
+        }
+
+        
+    </script>
+</body>
+</html>

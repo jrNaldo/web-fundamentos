@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas</title>
+    <div id="output"></div>
+</head>
+<body>
+    <script src="areas.js"></script>
+    <script>
+        try{
+            console.log(calcularAreaRetangulo(2, "asdas"))
+        }catch(error){
+            alert("Erro " + error.message)
+        }
+        try{
+            let areaTriangulo = calcularAreaTriangulo(3,"")
+            document.getElementById("output").innerHTML = `a area do triangulo é ${areaTriangulo}`
+        }catch(error){
+            alert("Erro " + error.message)
+        }
+        try{
+            let areaCirculo = calcularAreaCirculo("")
+            document.getElementById("output").innerHTML = `a area do Circulo é ${areaCirculo}`
+        }catch(error){
+            alert("Erro " + error.message)
+        }
+    </script>
+</body>
+</html>
