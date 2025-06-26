@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy VS Falsy</title>
+</head>
+<body>
+    <h1>Truthy VS Falsy</h1>
+    <p>Em JS, valores como 0, "", NaN, undefined, null e flase sao avaliados como false quando convertidos para boolean</p>
+    <p>Todo o resto é avaliado como true</p>
+
+    <script>
+        let n = null
+        if(n){
+            console.log("bloco verdade " + typeof(n))
+        }else{
+            console.log("Bloco mentira " + typeof(n))
+        }
+    </script>
+</body>
+</html>
