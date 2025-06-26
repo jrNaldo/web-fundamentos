@@ -14,6 +14,6 @@ function calcularAreaCirculo(r){
     if(typeof r !== "number"){
         throw new Error("calcularAreaCirculo: Raio precisa ser do tipo number, numero")
     }
-    const pi = Math.PI
-    return pi * r**2
+    
+    return Math.PI * r**2
 }
