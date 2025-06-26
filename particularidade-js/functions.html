@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        //functions declarations
+        function calcularArea(b,a){
+            return b * a
+            console.log(`Function Declaration`)
+        }
+        console.log(`A area do retangulo é ${calcularArea(2,4)}cm²`)
+
+
+        //functions expressions
+        const v1 = function(l,a){
+            return l * a /2
+            console.log(`Function Expressions`)
+        }
+        console.log(v1)
+        console.log(`A area do triangulo é : ${v1(5,7)}cm²`)
+        
+        const arr = [calcularArea, v1, function(n){console.log("Funcao anonima dentro de array executada !!! " + n)}]
+        arr[2]("parametro usado")
+
+        //arrow function
+
+        
+    </script>
+</body>
+</html>

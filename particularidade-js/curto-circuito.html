@@ -9,9 +9,27 @@
     <h1>Curto Circuito</h1>
 
     <script>
-        let n = 0
-        n = n || 10
-        console.log(n)
+        let n = 2
+
+        n = n && 10
+
+        n = n.toString(2)
+        
+        console.log(n, typeof n)
+        
+        n = 10
+
+        n = n.toString(15)
+
+        console.log(n, typeof n)
+
+        function teste(p){
+            p = p !== undefined ? p: 10
+            console.log(p)
+        }
+        teste()
+        teste(0)
+        teste(21)
     </script>
 </body>
 </html>
