@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+</head>
+<body>
+    <h1>O que são Metodos</h1>
+    <p>Uma função atrelada a um objeto</p>
+    <script>
+        const produto = {
+            nome: "caneta",
+            quantidade: 10,
+            comprar: function(n){
+                if(n > this.quantidade){
+                    console.log(`Quantidade em estoque inferior a quantidade pedida, sendo de ${this.quantidade}`)
+                    return null
+                }
+                console.log(`Comprar caneta`)
+                this.quantidade -= n
+            },
+            teste1: function(){
+                console.log("Teste 1")
+                console.log(this)
+            },
+            teste2: () => {
+                console.log("Teste 2")
+                console.log(this)
+            }
+        }
+
+        console.log(produto)
+        //Comprar 3 canetas
+        produto.quantidade -= 3
+        console.log(produto)
+        //Comprar 3 canetas
+        produto.quantidade -= 14
+        produto.quantidade = 10
+        
+        produto.comprar(11)
+        console.log(produto)
+        produto.teste1()
+        produto.teste2()
+    </script>
+</body>
+</html>

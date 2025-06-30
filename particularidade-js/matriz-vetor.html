@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor, Array, Lista e Matriz</title>
+</head>
+<body>
+    <h1>Vetor, Array, Lista e Matriz</h1>
+    <script>
+        const notas = [ [3,4,5,6],[2,4,5,6,],[0,7,89,8]]
+        console.log(notas[1][2])
+        for(let i = 0; i < notas.length;i++){
+            const notasAluno = notas[i]
+            console.log(notasAluno)
+            for(let j = 0; j < notasAluno.length;j++ ){
+                console.log(`As notas dos alunos foram: ${notasAluno[j]}`)
+            }
+        }
+    </script>
+</body>
+</html>
