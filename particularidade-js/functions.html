@@ -26,9 +26,17 @@
         const arr = [calcularArea, v1, function(n){console.log("Funcao anonima dentro de array executada !!! " + n)}]
         arr[2]("parametro usado")
 
-        //arrow function
+        //arrow function - Trabalhar com functions expressions de maneira + enxuta
+        const v2 = (r,nome) =>{
+            return Math.PI * r**2
+            console.log("Arrow function "+ nome)
+        }
+        console.log(`A area do circulo é : ${v2(3)}`)
 
-        
+        const soma = (n1,n2) => n1 + n2
+        console.log(soma(23405,345))
+        const multipor2 = (n) => n * 2
+        console.log(multipor2(121388))
     </script>
 </body>
 </html>
